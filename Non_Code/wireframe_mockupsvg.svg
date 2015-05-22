@@ -1,617 +1,272 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 744.09448819 1052.3622047"
-   id="svg3336"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="wireframe_mockupsvg.svg">
-  <defs
-     id="defs3338">
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="Arrow1Lend"
-       style="overflow:visible;"
-       inkscape:isstock="true">
-      <path
-         id="path4398"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#002af2;stroke-width:1pt;stroke-opacity:0.78431373;fill:#0000ff;fill-opacity:1"
-         transform="scale(0.8) rotate(180) translate(12.5,0)" />
-    </marker>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient3573">
-      <stop
-         style="stop-color:#f9f9f9;stop-opacity:1;"
-         offset="0"
-         id="stop3575" />
-      <stop
-         style="stop-color:#f9f9f9;stop-opacity:0;"
-         offset="1"
-         id="stop3577" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3573"
-       id="linearGradient3579"
-       x1="577.83881"
-       y1="588.32336"
-       x2="859.57666"
-       y2="551.86316"
-       gradientUnits="userSpaceOnUse" />
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow1Lend-8"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4398-9"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1pt;stroke-opacity:0.78431373"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker4279"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4281"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1pt;stroke-opacity:0.78431373"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow1Lend-7"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4398-0"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1pt;stroke-opacity:0.78431373"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker4349"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4351"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1pt;stroke-opacity:0.78431373"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="Arrow1Lend-6"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4398-6"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1pt;stroke-opacity:0.78431373"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker4243"
-       style="overflow:visible"
-       inkscape:isstock="true">
-      <path
-         inkscape:connector-curvature="0"
-         id="path4245"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1pt;stroke-opacity:0.78431373"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.90509668"
-     inkscape:cx="1128.603"
-     inkscape:cy="1942.4398"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1048"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:snap-object-midpoints="true"
-     inkscape:snap-center="false" />
-  <metadata
-     id="metadata3341">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.227;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect3544"
-       width="777.30035"
-       height="1060.5221"
-       x="845.52771"
-       y="-1.5443196" />
-    <rect
-       y="-0.65485233"
-       x="1833.8843"
-       height="1064.3246"
-       width="799.92554"
-       id="rect3546"
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.54950178;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:128.76306152px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="186.76865"
-       y="242.85378"
-       id="text3559"
-       sodipodi:linespacing="125%"
-       transform="scale(0.78920899,1.2670915)"><tspan
-         sodipodi:role="line"
-         id="tspan3561"
-         x="186.76865"
-         y="242.85378">Friender</tspan><tspan
-         sodipodi:role="line"
-         x="186.76865"
-         y="403.80762"
-         id="tspan3563" /></text>
-    <rect
-       style="fill:url(#linearGradient3579);stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
-       id="rect3565"
-       width="421.875"
-       height="117.1875"
-       x="153.125"
-       y="528.92468" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="156.04492"
-       y="598.55359"
-       id="text3567"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3569"
-         x="156.04492"
-         y="598.55359">Login With Facebook</tspan></text>
-    <path
-       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1.1072098;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#Arrow1Lend);marker-end:url(#Arrow1Lend)"
-       d="m 555.00874,560.19862 370.41702,2.56042"
-       id="path3581"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="250"
-       y="1111.7372"
-       id="text4156"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4158"
-         x="250"
-         y="1111.7372">Login Page</tspan><tspan
-         sodipodi:role="line"
-         x="250"
-         y="1161.7372"
-         id="tspan4160" /></text>
-    <rect
-       y="-1.5443277"
-       x="845.52765"
-       height="96.28466"
-       width="777.30035"
-       id="rect4170"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.67102528;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:79.43209076px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1028.9783"
-       y="66.380501"
-       id="text4231"
-       sodipodi:linespacing="125%"
-       transform="scale(0.9502318,1.0523748)"><tspan
-         sodipodi:role="line"
-         id="tspan4233"
-         x="1028.9783"
-         y="66.380501">People</tspan></text>
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.227;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4235"
-       width="467.1875"
-       height="606.25"
-       x="1000.5841"
-       y="225.59174" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1042.1875"
-       y="1108.6122"
-       id="text4241"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4243"
-         x="1042.1875"
-         y="1108.6122">Main Page(People Page)</tspan><tspan
-         sodipodi:role="line"
-         x="1042.1875"
-         y="1158.6122"
-         id="tspan4245" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1081.25"
-       y="477.36221"
-       id="text4247"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4249"
-         x="1081.25"
-         y="477.36221">Widget for </tspan><tspan
-         sodipodi:role="line"
-         x="1081.25"
-         y="527.36218"
-         id="tspan4251">Meeting People</tspan></text>
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80049175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4255"
-       width="384.99115"
-       height="96.492218"
-       x="1237.7759"
-       y="-1.8126804" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:84.90254211px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1298.3779"
-       y="73.448776"
-       id="text4259"
-       sodipodi:linespacing="125%"
-       transform="scale(0.97754105,1.0229749)"><tspan
-         sodipodi:role="line"
-         id="tspan4261"
-         x="1298.3779"
-         y="73.448776"
-         style="fill:#b3b3b3">Events</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 857.8125,17.987205 68.75,-1.5625"
-       id="path4263"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 864.0625,41.424705 54.6875,0"
-       id="path4265"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 860.9375,74.237205 70.3125,0"
-       id="path4267"
-       inkscape:connector-curvature="0" />
-    <rect
-       y="0.084155686"
-       x="1834.4979"
-       height="97.46241"
-       width="790.091"
-       id="rect4170-3"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.68064868;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:80.57125854px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="2067.7268"
-       y="68.901131"
-       id="text4231-8"
-       sodipodi:linespacing="125%"
-       transform="scale(0.95221203,1.0501863)"><tspan
-         sodipodi:role="line"
-         id="tspan4233-2"
-         x="2067.7268"
-         y="68.901131">People</tspan></text>
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.82144469;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4255-7"
-       width="400.51022"
-       height="97.672501"
-       x="2233.2007"
-       y="-0.18748304" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:86.12016296px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="2312.3826"
-       y="76.11586"
-       id="text4259-7"
-       sodipodi:linespacing="125%"
-       transform="scale(0.97957824,1.0208475)"><tspan
-         sodipodi:role="line"
-         id="tspan4261-4"
-         x="2312.3826"
-         y="76.11586"
-         style="fill:#000000;">Events</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.01434135px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1846.9849,19.8546 69.8814,-1.581614"
-       id="path4263-5"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.01434135px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1853.3378,43.578785 55.5873,0"
-       id="path4265-8"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.01434135px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1850.1614,76.792645 71.4694,0"
-       id="path4267-4"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1.1072098;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#Arrow1Lend-7);marker-end:url(#Arrow1Lend-7)"
-       d="m 1559.4557,62.182293 370.4171,2.56042"
-       id="path3581-6"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.6525569;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4368"
-       width="799.92554"
-       height="188.76727"
-       x="1833.8843"
-       y="97.750664" />
-    <rect
-       y="278.50696"
-       x="1833.8843"
-       height="187.55515"
-       width="799.92554"
-       id="rect4370"
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.6504584;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       y="437.72983"
-       x="1833.8843"
-       height="187.55515"
-       width="799.92554"
-       id="rect4370-4"
-       style="fill:#ffffff;stroke:#000000;stroke-width:0.6504584;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:88.81655884px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2600.9504"
-       y="167.91299"
-       id="text4402"
-       sodipodi:linespacing="125%"
-       transform="scale(0.75503804,1.3244366)"><tspan
-         sodipodi:role="line"
-         id="tspan4404"
-         x="2600.9504"
-         y="167.91299">RecyclerView of</tspan><tspan
-         sodipodi:role="line"
-         x="2600.9504"
-         y="262.98767"
-         id="tspan4406" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:105.43834686px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2816.3162"
-       y="287.14102"
-       id="text4408"
-       sodipodi:linespacing="125%"
-       transform="scale(0.69664052,1.4354606)"><tspan
-         sodipodi:role="line"
-         id="tspan4410"
-         x="2816.3162"
-         y="287.14102">All The Events</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:100.561409px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="3071.6443"
-       y="356.03076"
-       id="text4412"
-       sodipodi:linespacing="125%"
-       transform="scale(0.6158163,1.6238609)"><tspan
-         sodipodi:role="line"
-         id="tspan4414"
-         x="3071.6443"
-         y="356.03076">Happening in the area</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="2154.4661"
-       y="1107.6049"
-       id="text4416"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4418"
-         x="2154.4661"
-         y="1107.6049">Events Page</tspan></text>
-    <rect
-       y="-1309.6919"
-       x="867.62476"
-       height="1060.5221"
-       width="777.30035"
-       id="rect4205"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.227;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.67102528;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4207"
-       width="777.30035"
-       height="96.28466"
-       x="868.72955"
-       y="-1310.7968" />
-    <text
-       transform="scale(0.9502318,1.0523748)"
-       sodipodi:linespacing="125%"
-       id="text4209"
-       y="-1176.663"
-       x="1052.2327"
-       style="font-style:normal;font-weight:normal;font-size:79.43209076px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="-1176.663"
-         x="1052.2327"
-         id="tspan4211"
-         sodipodi:role="line">People</tspan></text>
-    <rect
-       y="-1082.5558"
-       x="1022.6812"
-       height="606.25"
-       width="467.1875"
-       id="rect4213"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.227;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       sodipodi:linespacing="125%"
-       id="text4215"
-       y="-830.78534"
-       x="1103.3472"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         y="-830.78534"
-         x="1103.3472"
-         id="tspan4217"
-         sodipodi:role="line">Widget for </tspan><tspan
-         id="tspan4219"
-         y="-780.78534"
-         x="1103.3472"
-         sodipodi:role="line">Meeting People</tspan></text>
-    <rect
-       y="-1309.9602"
-       x="1259.873"
-       height="96.492218"
-       width="384.99115"
-       id="rect4221"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.80049175;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       transform="scale(0.97754108,1.0229749)"
-       sodipodi:linespacing="125%"
-       id="text4223"
-       y="-1205.3192"
-       x="1320.9827"
-       style="font-style:normal;font-weight:normal;font-size:84.90254211px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="fill:#b3b3b3"
-         y="-1205.3192"
-         x="1320.9827"
-         id="tspan4225"
-         sodipodi:role="line">Events</tspan></text>
-    <path
-       style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#002af2;stroke-width:1.44608724;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#Arrow1Lend-6);marker-end:url(#Arrow1Lend-6)"
-       d="m 914.42671,63.192018 2.0019,-370.437438"
-       id="path3581-0"
-       inkscape:connector-curvature="0" />
-    <rect
-       y="-1310.144"
-       x="869.38226"
-       height="1058.4122"
-       width="471.30548"
-       id="rect5630"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.73238564;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1337.9786,-1213.6941 -470.66794,-1.1048"
-       id="path5632"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1321.4058,-1295.4533 -88.3883,0"
-       id="path5634"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1323.6154,-1268.9368 -88.3883,0"
-       id="path5634-7"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 1325.8252,-1242.4203 -88.3883,0"
-       id="path5634-7-0"
-       inkscape:connector-curvature="0" />
-    <ellipse
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.5366652;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="path5684"
-       cx="924.76306"
-       cy="-1261.2028"
-       rx="42.934486"
-       ry="40.724777" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:21.82234955px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1133.6342"
-       y="-1011.0363"
-       id="text5689"
-       sodipodi:linespacing="125%"
-       transform="scale(0.79223049,1.2622589)"><tspan
-         sodipodi:role="line"
-         id="tspan5691"
-         x="1133.6342"
-         y="-1011.0363">profile</tspan><tspan
-         sodipodi:role="line"
-         x="1133.6342"
-         y="-983.75836"
-         id="tspan5693">pic</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:35.62408829px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1813.075"
-       y="-670.90466"
-       id="text5695"
-       sodipodi:linespacing="125%"
-       transform="scale(0.54225036,1.8441666)"><tspan
-         sodipodi:role="line"
-         id="tspan5697"
-         x="1813.075"
-         y="-670.90466">First Name Last Name</tspan></text>
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.227;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect5699"
-       width="469.56311"
-       height="93.912621"
-       x="870.62524"
-       y="-1212.5892" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3336" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:version="0.91 r13725" sodipodi:docname="wireframe_mockupsvg.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.275px"
+	 height="841.89px" viewBox="0 0 595.275 841.89" enable-background="new 0 0 595.275 841.89" xml:space="preserve">
+<sodipodi:namedview  inkscape:cx="832.15268" inkscape:cy="2053.0122" showgrid="false" bordercolor="#666666" id="base" pagecolor="#ffffff" inkscape:zoom="0.64" borderopacity="1.0" inkscape:window-maximized="1" inkscape:pageshadow="2" inkscape:current-layer="layer1" inkscape:window-y="0" inkscape:snap-center="false" inkscape:pageopacity="0.0" inkscape:window-height="1048" inkscape:document-units="px" inkscape:window-x="0" inkscape:window-width="1920" inkscape:snap-object-midpoints="true">
+	</sodipodi:namedview>
+<g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
+	
+		<rect id="rect3544" x="676.422" y="-16.445" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.841" height="867.474"/>
+	
+		<rect id="rect3546" x="1467.107" y="-10.441" fill="#FFFFFF" stroke="#000000" stroke-width="1.5495" width="639.938" height="851.458"/>
+	<text transform="matrix(0.6229 0 0 1 117.9199 236.2544)" font-family="'ArialMT'" font-size="130.5237">Friender</text>
+	
+		<linearGradient id="rect3565_1_" gradientUnits="userSpaceOnUse" x1="582.0762" y1="420.7007" x2="863.8113" y2="384.2409" gradientTransform="matrix(0.8 0 0 0.8 -6.2893 101.78)">
+		<stop  offset="0" style="stop-color:#F9F9F9"/>
+		<stop  offset="1" style="stop-color:#F9F9F9;stop-opacity:0"/>
+	</linearGradient>
+	
+		<rect id="rect3565" x="122.5" y="413.223" fill="url(#rect3565_1_)" stroke="#000000" stroke-width="1.5" width="337.5" height="93.75"/>
+	<text transform="matrix(1 0 0 1 124.8359 468.9224)" font-family="'ArialMT'" font-size="32">Login With Facebook</text>
+	<path d="M0-9.917"/>
+	<path id="path4398" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="M731.483,440.228l-3.567,3.518l12.425-3.457
+		l-12.376-3.629L731.483,440.228z"/>
+	<path id="path3581" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
+		M740.341,440.289"/>
+	<text transform="matrix(1 0 0 1 200 879.4722)" font-family="'ArialMT'" font-size="32">Login Page</text>
+	
+		<rect id="rect4170" x="679.301" y="-15.292" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.842" height="77.027"/>
+	<text transform="matrix(0.9029 0 0 1 782.2148 45.9673)" font-family="'ArialMT'" font-size="66.8739">People</text>
+	
+		<rect id="rect4235" x="714.189" y="112.798" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="546.305" height="679.596"/>
+	<text transform="matrix(1 0 0 1 833.75 888.9702)" font-family="'ArialMT'" font-size="32">Main Page(People Page)</text>
+	
+		<rect id="rect4255" x="993.149" y="-15.375" fill="#FFFFFF" stroke="#000000" stroke-width="0.8005" width="307.992" height="77.194"/>
+	<text transform="matrix(0.9556 0 0 1 1015.376 50.189)" fill="#B3B3B3" font-family="'ArialMT'" font-size="69.4825">Events</text>
+	<path id="path4263" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M686.25,4.473l55-1.25"/>
+	<path id="path4265" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M691.25,23.223H735"/>
+	<path id="path4267" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M688.75,49.473H745"/>
+	
+		<rect id="rect4170-3" x="1467.599" y="-9.851" fill="#FFFFFF" stroke="#000000" stroke-width="0.6806" width="632.072" height="77.97"/>
+	<text transform="matrix(0.9067 0 0 1 1575.1309 47.9683)" fill="#B3B3B3" font-family="'ArialMT'" font-size="67.6919">People</text>
+	
+		<rect id="rect4255-7" x="1786.561" y="-10.067" fill="#FFFFFF" stroke="#000000" stroke-width="0.8214" width="320.408" height="78.138"/>
+	<text transform="matrix(0.9596 0 0 1 1812.127 52.2417)" font-family="'ArialMT'" font-size="70.3324">Events</text>
+	<path id="path4263-5" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1.0143" d="M1477.588,5.966
+		l55.905-1.266"/>
+	<path id="path4265-8" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1.0143" d="M1482.67,24.945
+		h44.47"/>
+	<path id="path4267-4" inkscape:connector-curvature="0" fill="none" stroke="#000000" stroke-width="1.0143" d="M1480.129,51.517
+		h57.176"/>
+	<path fill="none" stroke="#000000" stroke-width="1.0143" d="M0-9.917"/>
+	<path id="path4398-0" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
+		M1535.041,41.815l-3.567,3.519l12.428-3.458l-12.376-3.628L1535.041,41.815z"/>
+	<path id="path3581-6" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
+		M1543.898,41.876"/>
+	
+		<rect id="rect4368" x="1467.107" y="68.284" fill="#FFFFFF" stroke="#000000" stroke-width="0.6526" width="639.938" height="151.014"/>
+	
+		<rect id="rect4370" x="1467.107" y="212.889" fill="#FFFFFF" stroke="#000000" stroke-width="0.6505" width="639.938" height="150.044"/>
+	
+		<rect id="rect4370-4" x="1467.107" y="340.267" fill="#FFFFFF" stroke="#000000" stroke-width="0.6505" width="639.938" height="150.043"/>
+	<text transform="matrix(0.5701 0 0 1 1571.0527 167.9937)" font-family="'ArialMT'" font-size="94.1055">RecyclerView of</text>
+	<text transform="matrix(0.4853 0 0 1 1569.5684 319.8257)" font-family="'ArialMT'" font-size="121.0821">All The Events</text>
+	<text transform="matrix(0.3792 0 0 1 1513.2549 452.5972)" font-family="'ArialMT'" font-size="130.6382">Happening in the area</text>
+	<text transform="matrix(1 0 0 1 1723.5723 876.1655)" font-family="'ArialMT'" font-size="32">Events Page</text>
+	
+		<rect id="rect4205" x="694.1" y="-1057.67" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.842" height="848.417"/>
+	
+		<rect id="rect4207" x="694.983" y="-1058.555" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.841" height="77.028"/>
+	<text transform="matrix(0.9029 0 0 1 799.8926 -1000.5513)" font-family="'ArialMT'" font-size="66.8739">People</text>
+	<rect id="rect4213" x="818.145" y="-875.962" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="373.75" height="485"/>
+	<text transform="matrix(1 0 0 1 882.6777 -674.5474)" font-family="'ArialMT'" font-size="32">Widget for </text>
+	<text transform="matrix(1 0 0 1 882.6777 -634.5474)" font-family="'ArialMT'" font-size="32">Meeting People</text>
+	
+		<rect id="rect4221" x="1007.898" y="-1057.885" fill="#FFFFFF" stroke="#000000" stroke-width="0.8005" width="307.99" height="77.194"/>
+	<text transform="matrix(0.9556 0 0 1 1033.0508 -996.3286)" fill="#B3B3B3" font-family="'ArialMT'" font-size="69.4825">Events</text>
+	<path fill="#B3B3B3" d="M0-9.917"/>
+	<path id="path4398-6" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
+		M733.08-244.146l4.603,4.652l-4.54-16.221l-4.715,16.171L733.08-244.146z"/>
+	<path id="path3581-0" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
+		M733.143-255.713"/>
+	
+		<rect id="rect5630" x="695.506" y="-1058.033" fill="#FFFFFF" stroke="#000000" stroke-width="1.7324" width="377.044" height="846.73"/>
+	<path id="path5632" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M1070.383-980.873l-376.534-0.884"/>
+	<path id="path5634" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M1057.125-1046.281h-70.711"/>
+	<path id="path5634-7" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M1058.893-1025.066h-70.711"/>
+	<path id="path5634-7-0" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M1060.66-1003.854h-70.711"/>
+	
+		<ellipse id="path5684" fill="#FFFFFF" stroke="#000000" stroke-width="2.5367" cx="739.811" cy="-1018.879" rx="34.351" ry="32.58"/>
+	<text transform="matrix(0.6276 0 0 1 718.4795 -1030.8716)" font-family="'ArialMT'" font-size="22.0364">profile</text>
+	<text transform="matrix(0.6276 0 0 1 718.4795 -1003.3247)" font-family="'ArialMT'" font-size="22.0364">pic</text>
+	<text transform="matrix(0.294 0 0 1 786.5127 -999.7271)" font-family="'ArialMT'" font-size="52.5574">First Name Last Name</text>
+	<rect id="rect5699" x="696.5" y="-979.989" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="375.65" height="75.13"/>
+	<text transform="matrix(1.0053 0 0 1 814.7988 -925.7349)" font-family="'ArialMT'" font-size="46.5363">Profile</text>
+	
+		<rect id="rect5699-1" x="695.925" y="-905.592" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="375.65" height="75.13"/>
+</g>
+<text transform="matrix(0.7833 0 0 1 814.7988 -840.7036)" font-family="'MyriadPro-Regular'" font-size="52.3894">Matches</text>
+<rect id="rect5699-1_1_" x="696.5" y="-830.462" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="375.65" height="75.13"/>
+<text transform="matrix(0.5428 -0.0011 0.002 1 814.8877 -765.2471)" font-family="'MyriadPro-Regular'" font-size="58.2785">Your Events</text>
+<line fill="none" stroke="#000000" stroke-width="2.227" x1="464.606" y1="492.279" x2="736.09" y2="472.41"/>
+<line fill="none" stroke="#000000" stroke-width="2.227" x1="745" y1="323.445" x2="745" y2="324.445"/>
+<line fill="none" stroke="#000000" stroke-width="2.227" x1="718.479" y1="7.445" x2="718.479" y2="8.445"/>
+<line fill="none" stroke="#000000" stroke-width="2.227" x1="718.479" y1="7.445" x2="737.683" y2="-262.555"/>
+<line fill="none" stroke="#000000" stroke-width="2.227" x1="1237.138" y1="33.14" x2="1535.041" y2="51.733"/>
+<rect id="rect5699-1_2_" x="694.291" y="-755.332" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="375.649" height="75.13"/>
+<text transform="matrix(0.5428 -0.0011 0.002 1 818.1982 -694.9155)" font-family="'MyriadPro-Regular'" font-size="58.2785">Settings</text>
+<rect id="rect4205_1_" x="-245.9" y="-2054.798" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.841" height="947.5"/>
+<line fill="none" stroke="#000000" stroke-width="2.227" x1="713.125" y1="-933.506" x2="310.138" y2="-1343.555"/>
+<rect id="rect4170_1_" x="-246.073" y="-2054.798" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.841" height="77.027"/>
+<path id="path5634_1_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M-158.875-2046.555h-70.711"/>
+<path id="path5634_2_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M-159.188-2027.555h-70.711"/>
+<path id="path5634_3_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M-158.875-2003.555h-70.711"/>
+<text transform="matrix(0.5853 0 0 1 -17.8594 -2003.5552)" font-family="'MyriadPro-Regular'" font-size="62.6244">Your Profile</text>
+<rect x="-245.9" y="-1984.028" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.841" height="393.473"/>
+<polygon fill="#FFFFFF" stroke="#000000" stroke-width="0.671" points="1089.138,-1815.555 1092.138,-1815.555 1092.138,-1815.555 
+	"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="350.138" y1="-1846.555" x2="368.138" y2="-1823.555"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="368.138" y1="-1823.555" x2="350.138" y2="-1803.555"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="-215.862" y1="-1846.555" x2="-238.862" y2="-1823.555"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="-238.862" y1="-1823.555" x2="-215.862" y2="-1803.555"/>
+<text transform="matrix(0.4811 0 0 1 -63.8633 -1815.5552)" font-family="'MyriadPro-Regular'" font-size="96">Your Pictures</text>
+<g>
+	<title></title>
+	<g id="miu">
+		<path id="editor_pencil_pen_edit_write_glyph" d="M313.841-1637.135l10.563,11.498l24.144-26.282l-10.563-11.497L313.841-1637.135
+			z M344.066-1670.036l-4.456,4.85l10.562,11.497l4.456-4.853c1.513-1.645,0-3.292,0-3.292l-7.536-8.203
+			C347.092-1670.036,345.579-1671.683,344.066-1670.036z M312.357-1635.574l-2.222,13.97l12.807-2.445L312.357-1635.574z"/>
+	</g>
+</g>
+<path fill="#B5B5B5" stroke="#000000" stroke-width="2.227" d="M368.138-1911.974c0,3.545-2.874,6.419-6.419,6.419l0,0
+	c-3.545,0-6.419-2.874-6.419-6.419v-53.162c0-3.545,2.874-6.419,6.419-6.419l0,0c3.545,0,6.419,2.874,6.419,6.419V-1911.974z"/>
+<text transform="matrix(1 0 0 1 324.1377 -1948.5552)" font-family="'MyriadPro-Regular'" font-size="12">Scroll</text>
+<text transform="matrix(1 0 0 1 292.1377 -1790.5552)" font-family="'MyriadPro-Regular'" font-size="12">View Right</text>
+<text transform="matrix(1 0 0 1 292.1377 -1776.1567)" font-family="'MyriadPro-Regular'" font-size="12">Photo (can</text>
+<text transform="matrix(1 0 0 1 292.1377 -1761.7563)" font-family="'MyriadPro-Regular'" font-size="12">also swipe)</text>
+<text transform="matrix(1 0 0 1 -215.8618 -1790.5552)" font-family="'MyriadPro-Regular'" font-size="12">View Left</text>
+<text transform="matrix(1 0 0 1 -215.8618 -1776.1567)" font-family="'MyriadPro-Regular'" font-size="12">Photo (can</text>
+<text transform="matrix(1 0 0 1 -215.8618 -1761.7563)" font-family="'MyriadPro-Regular'" font-size="12">also swipe)</text>
+<text transform="matrix(0.412 0 0 1 -229.8989 -1542.979)" font-family="'MyriadPro-Regular'" font-size="53.1393">FirstName LastName</text>
+<text transform="matrix(0.412 0 0 1 303.1357 -1542.979)" font-family="'MyriadPro-Regular'" font-size="53.1393">Age</text>
+<text transform="matrix(0.7082 0 0 1 -227.3613 -1320.6626)" font-family="'MyriadPro-Regular'" font-size="33.7796">Interests:</text>
+<rect x="-228.612" y="-1518.556" fill="none" width="564" height="188"/>
+<text transform="matrix(0.9403 0 0 1 -228.6118 -1501.5161)" font-family="'MyriadPro-Regular'" font-size="24">Your Bio Here:</text>
+<text transform="matrix(0.9403 0 0 1 -228.6118 -1472.7173)" font-family="'MyriadPro-Regular'" font-size="24">Lorem Ipsum is simply dummy text of the printing and </text>
+<text transform="matrix(0.9403 0 0 1 -228.6118 -1443.9165)" font-family="'MyriadPro-Regular'" font-size="24">typesetting industry. Lorem Ipsum has been the industry&apos;s </text>
+<text transform="matrix(0.9403 0 0 1 -228.6118 -1415.1177)" font-family="'MyriadPro-Regular'" font-size="24">standard dummy text ever since the 1500s, when an un</text>
+<text transform="matrix(0.9403 0 0 1 289.6382 -1415.1177)" font-family="'MyriadPro-Regular'" font-size="24">-</text>
+<text transform="matrix(0.9403 0 0 1 -228.6118 -1386.3169)" font-family="'MyriadPro-Regular'" font-size="24">known printer took a galley of type and scrambled it to </text>
+<text transform="matrix(0.9403 0 0 1 -228.6118 -1357.5161)" font-family="'MyriadPro-Regular'" font-size="24">make a type specimen book. </text>
+<g>
+	<title></title>
+	<g id="miu_1_">
+		<path id="editor_pencil_pen_edit_write_glyph_1_" d="M312.89-1375.794l10.563,11.498l24.144-26.282l-10.563-11.497
+			L312.89-1375.794z M343.115-1408.695l-4.456,4.85l10.562,11.497l4.456-4.853c1.514-1.645,0-3.292,0-3.292l-7.536-8.203
+			C346.141-1408.695,344.628-1410.342,343.115-1408.695z M311.406-1374.233l-2.222,13.97l12.807-2.445L311.406-1374.233z"/>
+	</g>
+</g>
+<g>
+	<circle fill="#FFFFFF" cx="-161.362" cy="-1242.884" r="54.5"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-216.8618" y1="-1298.9448" x2="-105.8618" y2="-1298.9448" gradientTransform="matrix(1 0 0 1 0 50.8896)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0" style="stop-color:#000000"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M-161.362-1192.555c-30.603,0-55.5-24.897-55.5-55.5s24.897-55.5,55.5-55.5s55.5,24.897,55.5,55.5
+		S-130.759-1192.555-161.362-1192.555z M-161.362-1301.555c-29.5,0-53.5,24-53.5,53.5s24,53.5,53.5,53.5s53.5-23.315,53.5-53.5
+		C-107.862-1277.555-131.862-1301.555-161.362-1301.555z"/>
+</g>
+<text transform="matrix(1 0 0 1 -198.8623 -1256.5552)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 -198.8623 -1227.7563)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<line fill="none" stroke="#C7C8CA" stroke-width="2.227" x1="-245.9" y1="-1534.555" x2="375.941" y2="-1534.555"/>
+<line fill="none" stroke="#939598" stroke-width="2.227" x1="827.138" y1="-1542.979" x2="826.138" y2="-1542.979"/>
+<line fill="none" stroke="#C7C8CA" stroke-width="2.227" x1="-245.9" y1="-1351.958" x2="375.941" y2="-1351.958"/>
+<g>
+	<circle fill="#FFFFFF" cx="-29.364" cy="-1242.627" r="54.5"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-84.8638" y1="-1298.9448" x2="26.1362" y2="-1298.9448" gradientTransform="matrix(1 0 0 1 0 50.8896)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0" style="stop-color:#000000"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M-29.364-1192.555c-30.603,0-55.5-24.897-55.5-55.5s24.897-55.5,55.5-55.5
+		c30.603,0,55.5,24.897,55.5,55.5S1.239-1192.555-29.364-1192.555z M-29.364-1301.555c-29.5,0-53.5,24-53.5,53.5s24,53.5,53.5,53.5
+		s53.5-24,53.5-53.5S0.136-1301.555-29.364-1301.555z"/>
+</g>
+<g>
+	<circle fill="#FFFFFF" cx="108.639" cy="-1246.555" r="54.5"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="53.1392" y1="-1292.2734" x2="164.1392" y2="-1292.2734" gradientTransform="matrix(1 0 0 1 0 50.8896)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0" style="stop-color:#000000"/>
+	</linearGradient>
+	<path fill="url(#SVGID_3_)" d="M108.639-1185.884c-30.603,0-55.5-24.897-55.5-55.5c0-30.604,24.897-55.5,55.5-55.5
+		s55.5,24.896,55.5,55.5C164.139-1210.781,139.242-1185.884,108.639-1185.884z M108.639-1294.884c-29.5,0-53.5,24-53.5,53.5
+		s24,53.5,53.5,53.5s53.5-23.315,53.5-53.5C162.138-1270.884,138.138-1294.884,108.639-1294.884z"/>
+</g>
+<g>
+	<circle fill="#FFFFFF" cx="246.057" cy="-1246.298" r="54.5"/>
+	
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="190.5571" y1="-1297.4448" x2="301.5557" y2="-1297.4448" gradientTransform="matrix(1 0 0 1 0 50.8896)">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0" style="stop-color:#000000"/>
+	</linearGradient>
+	<path fill="url(#SVGID_4_)" d="M246.057-1191.055c-30.603,0-55.5-24.897-55.5-55.5s24.897-55.5,55.5-55.5
+		s55.499,24.897,55.499,55.5S276.66-1191.055,246.057-1191.055z M246.057-1300.055c-29.5,0-53.5,24-53.5,53.5
+		c0,43.291,24,53.5,53.5,53.5s53.499-24,53.499-53.5S275.556-1300.055,246.057-1300.055z"/>
+</g>
+<text transform="matrix(1 0 0 1 -63.8638 -1256.5552)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 -63.8638 -1222.5845)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 69.1377 -1251.3843)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 69.1377 -1222.5845)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 220.1377 -1251.3843)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 220.1377 -1222.5845)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 -199.5332 -1158.1274)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 -191.061 -1129.3276)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<text transform="matrix(1 0 0 1 -67.5352 -1158.3843)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 -59.063 -1129.5845)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<text transform="matrix(1 0 0 1 64.4668 -1158.1274)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 72.939 -1129.3276)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<text transform="matrix(1 0 0 1 207.8853 -1158.1274)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 216.3574 -1129.3276)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="341.138" y1="-1269.555" x2="359.138" y2="-1246.555"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="359.138" y1="-1246.555" x2="341.138" y2="-1226.555"/>
+<g>
+	<title></title>
+	<g id="miu_2_">
+		<path id="editor_pencil_pen_edit_write_glyph_2_" d="M305.26-1154.504l10.563,11.498l24.144-26.282l-10.563-11.497
+			L305.26-1154.504z M335.485-1187.405l-4.456,4.85l10.562,11.497l4.456-4.853c1.513-1.645,0-3.292,0-3.292l-7.536-8.203
+			C338.511-1187.405,336.998-1189.052,335.485-1187.405z M303.776-1152.943l-2.221,13.97l12.806-2.445L303.776-1152.943z"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 862.6982 -179.438)" font-family="'MyriadPro-Regular'" font-size="24">Navigation Sidebar</text>
+<text transform="matrix(1 0 0 1 -103.2515 -1083.8911)" font-family="'MyriadPro-Regular'" font-size="24">Your Profile Page</text>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="1270.679" y1="410.664" x2="1288.679" y2="433.664"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="1288.679" y1="433.664" x2="1270.679" y2="453.664"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="707.006" y1="412.163" x2="684.006" y2="435.164"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="684.006" y1="435.164" x2="707.006" y2="455.164"/>
+<text transform="matrix(0.6165 0 0 1 727.915 161.7788)" font-family="'MyriadPro-Regular'" font-size="43.4622">FirstName LastName</text>
+<text transform="matrix(0.6165 0 0 1 1209.3818 158.1499)" font-family="'MyriadPro-Regular'" font-size="43.4622">Age</text>
+<path fill="none" stroke="#000000" stroke-width="2.227" d="M958.696,86.055"/>
+<path fill="none" stroke="#000000" stroke-width="2.227" d="M930.198,107.054"/>
+<path fill="none" stroke="#000000" stroke-width="2.227" d="M987.342,107.054"/>
+<path fill="none" stroke="#000000" stroke-width="2.227" d="M958.696,86.055"/>
+<rect x="713.125" y="171.55" fill="none" stroke="#000000" stroke-width="2.227" width="547.369" height="369.522"/>
+<text transform="matrix(0.4304 0 0 1 833.75 372.8491)" font-family="'MyriadPro-Regular'" font-size="120.7232">Main Picture</text>
+<polygon fill="none" stroke="#000000" stroke-width="2.227" points="1261.026,623.568 713.657,623.568 715.017,541.072 
+	1262.386,541.072 "/>
+<text transform="matrix(1.4125 0 0 1 862.6982 597.8491)" font-family="'MyriadPro-Regular'" font-size="48.8382">Tagline</text>
+<circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="799.893" cy="692.263" r="58.736"/>
+<text transform="matrix(1 0 0 1 747.9473 768.5288)" font-family="'MyriadPro-Regular'" font-size="19">Main Interest</text>
+<text transform="matrix(1 0 0 1 783.3154 791.3296)" font-family="'MyriadPro-Regular'" font-size="19">One</text>
+<circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="974.314" cy="692.263" r="58.736"/>
+<text transform="matrix(1 0 0 1 922.3691 768.5288)" font-family="'MyriadPro-Regular'" font-size="19">Main Interest</text>
+<text transform="matrix(1 0 0 1 957.3857 791.3296)" font-family="'MyriadPro-Regular'" font-size="19">Two</text>
+<circle fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1150.646" cy="692.263" r="58.736"/>
+<text transform="matrix(1 0 0 1 1079.3408 768.5288)" font-family="'MyriadPro-Regular'" font-size="19">Main Interest</text>
+<text transform="matrix(1 0 0 1 1108.667 791.3296)" font-family="'MyriadPro-Regular'" font-size="19">Three</text>
+<g>
+	
+		<polyline id="Done__x2014__Displayed_on_the_left_side_of_a_contextual_action_bar__x28_CAB_x29__to_allow_the_user_to_dismiss_it._1_" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="
+		1018.279,72.123 970.745,99.987 949.139,87.321 	"/>
+</g>
+<g>
+	<polygon fill="#010101" points="1006.113,796.662 985.787,817.601 965.388,796.662 964.009,798.078 984.335,819.015 
+		964.009,839.957 965.388,841.373 985.787,820.431 1006.113,841.373 1007.565,839.957 987.166,819.015 1007.565,798.078 	"/>
+</g>
+<rect id="rect3544_1_" x="663.394" y="936.555" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.841" height="867.474"/>
+<line fill="none" stroke="#000000" stroke-width="2.227" x1="1249.076" y1="511.763" x2="1169.688" y2="990.236"/>
 </svg>
