@@ -1,2 +1,0 @@
-# Friender
-Yea :D
