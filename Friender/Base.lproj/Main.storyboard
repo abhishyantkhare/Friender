@@ -9,12 +9,8 @@
         <scene sceneID="end-v4-eKP">
             <objects>
                 <viewController id="iO9-4n-SOi" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tWV-BN-c44"/>
-                        <viewControllerLayoutGuide type="bottom" id="h9R-FZ-6ck"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h8b-mm-kSb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -69,7 +65,7 @@
             <objects>
                 <collectionViewController id="3ur-DW-Kzb" customClass="CollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mC0-5L-tHF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.73725491759999995" green="0.79215693470000004" blue="0.83137261870000001" alpha="1" colorSpace="deviceRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ryM-Mm-WMw">
@@ -80,7 +76,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" horizontalHuggingPriority="750" reuseIdentifier="Cell" id="sA9-Su-1AS" customClass="CollectionViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="148" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="148" height="112"/>
@@ -153,7 +149,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="iO9-4n-SOi" kind="relationship" relationship="viewControllers" id="a8p-OH-Nl8"/>
-                        <segue destination="ZSk-j3-qUy" kind="relationship" relationship="viewControllers" id="31q-HT-yqz"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
@@ -163,7 +158,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="events_icon.png" width="25" height="25"/>
         <image name="group_icon.png" width="25" height="25"/>
         <image name="profile_icon.png" width="25" height="25"/>
     </resources>

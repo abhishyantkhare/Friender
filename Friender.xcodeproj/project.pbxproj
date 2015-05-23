@@ -182,7 +182,7 @@
 				D2A72DFB1B11190F00BCAC57 /* CollectionViewCell.m */,
 				49BF5C2B1B10FFE9006454CD /* Images.xcassets */,
 				49BF5C2D1B10FFE9006454CD /* LaunchScreen.xib */,
-				49BF5C721B11341E006454CD /* Images */,
+				D252A3691B1124AE001E1036 /* Images */,
 				49BF5C1B1B10FFE9006454CD /* Supporting Files */,
 			);
 			path = Friender;
@@ -239,9 +239,11 @@
 			path = Friender.xcodeproj;
 			sourceTree = "<group>";
 		};
-		49BF5C721B11341E006454CD /* Images */ = {
+		D252A3691B1124AE001E1036 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D252A36E1B11266D001E1036 /* event copy.png */,
+				D252A36A1B1124C5001E1036 /* event.png */,
 			);
 			name = Images;
 			path = ../Friender.xcodeproj;
