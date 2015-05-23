@@ -30,6 +30,8 @@
 		49BF5C681B110B9A006454CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C641B110B9A006454CD /* Parse.framework */; };
 		49BF5C691B110B9A006454CD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C651B110B9A006454CD /* ParseCrashReporting.framework */; };
 		49BF5C6A1B110B9A006454CD /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */; };
+		D2A72DF91B1118EB00BCAC57 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */; };
+		D2A72DFC1B11190F00BCAC57 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72DFB1B11190F00BCAC57 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		49BF5C641B110B9A006454CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		49BF5C651B110B9A006454CD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		D2A72DF71B1118EB00BCAC57 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		D2A72DFA1B11190F00BCAC57 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		D2A72DFB1B11190F00BCAC57 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,10 @@
 				49BF5C251B10FFE9006454CD /* SecondViewController.h */,
 				49BF5C261B10FFE9006454CD /* SecondViewController.m */,
 				49BF5C281B10FFE9006454CD /* Main.storyboard */,
+				D2A72DF71B1118EB00BCAC57 /* CollectionViewController.h */,
+				D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */,
+				D2A72DFA1B11190F00BCAC57 /* CollectionViewCell.h */,
+				D2A72DFB1B11190F00BCAC57 /* CollectionViewCell.m */,
 				49BF5C2B1B10FFE9006454CD /* Images.xcassets */,
 				49BF5C2D1B10FFE9006454CD /* LaunchScreen.xib */,
 				49BF5C1B1B10FFE9006454CD /* Supporting Files */,
@@ -293,9 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A72DFC1B11190F00BCAC57 /* CollectionViewCell.m in Sources */,
 				49BF5C271B10FFE9006454CD /* SecondViewController.m in Sources */,
 				49BF5C211B10FFE9006454CD /* AppDelegate.m in Sources */,
 				49BF5C241B10FFE9006454CD /* FirstViewController.m in Sources */,
+				D2A72DF91B1118EB00BCAC57 /* CollectionViewController.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
