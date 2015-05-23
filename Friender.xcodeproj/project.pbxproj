@@ -58,8 +58,6 @@
 		49BF5C341B10FFE9006454CD /* FrienderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrienderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BF5C391B10FFE9006454CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49BF5C3A1B10FFE9006454CD /* FrienderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrienderTests.m; sourceTree = "<group>"; };
-		49BF5C441B110824006454CD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../../Downloads/parse-library-1.7.4/Bolts.framework"; sourceTree = "<group>"; };
-		49BF5C451B110824006454CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../../Downloads/parse-library-1.7.4/Parse.framework"; sourceTree = "<group>"; };
 		49BF5C491B1108A9006454CD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		49BF5C4B1B1108AD006454CD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		49BF5C4D1B1108B1006454CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -190,8 +188,6 @@
 				49BF5C4D1B1108B1006454CD /* CoreGraphics.framework */,
 				49BF5C4B1B1108AD006454CD /* CFNetwork.framework */,
 				49BF5C491B1108A9006454CD /* AudioToolbox.framework */,
-				49BF5C441B110824006454CD /* Bolts.framework */,
-				49BF5C451B110824006454CD /* Parse.framework */,
 			);
 			name = Frameworks;
 			path = Friender.xcodeproj;
