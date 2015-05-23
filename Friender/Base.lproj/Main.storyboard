@@ -76,7 +76,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" horizontalHuggingPriority="750" reuseIdentifier="Cell" id="sA9-Su-1AS" customClass="CollectionViewCell">
-                                <rect key="frame" x="0.0" y="64" width="148" height="112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="148" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="148" height="112"/>
