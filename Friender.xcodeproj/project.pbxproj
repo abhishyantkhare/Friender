@@ -30,6 +30,11 @@
 		49BF5C681B110B9A006454CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C641B110B9A006454CD /* Parse.framework */; };
 		49BF5C691B110B9A006454CD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C651B110B9A006454CD /* ParseCrashReporting.framework */; };
 		49BF5C6A1B110B9A006454CD /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */; };
+		7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D52111B11169B00B1B7CE /* TabBarController.m */; };
+		7E0D52141B1117A500B1B7CE /* group_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52131B1117A500B1B7CE /* group_icon@2x.png */; };
+		7E0D52161B111B0F00B1B7CE /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52151B111B0F00B1B7CE /* person@2x.png */; };
+		7E0D52181B111C1D00B1B7CE /* events_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */; };
+		7ED2C4FB1B1122D700EE4952 /* profile_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,12 @@
 		49BF5C641B110B9A006454CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		49BF5C651B110B9A006454CD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		7E0D52101B11169B00B1B7CE /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = ../TabBarController.h; sourceTree = "<group>"; };
+		7E0D52111B11169B00B1B7CE /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = ../TabBarController.m; sourceTree = "<group>"; };
+		7E0D52131B1117A500B1B7CE /* group_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group_icon@2x.png"; sourceTree = "<group>"; };
+		7E0D52151B111B0F00B1B7CE /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "person@2x.png"; sourceTree = "<group>"; };
+		7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "events_icon@2x.png"; sourceTree = "<group>"; };
+		7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +141,12 @@
 		49BF5C1A1B10FFE9006454CD /* Friender */ = {
 			isa = PBXGroup;
 			children = (
+				7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */,
+				7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */,
+				7E0D52151B111B0F00B1B7CE /* person@2x.png */,
+				7E0D52131B1117A500B1B7CE /* group_icon@2x.png */,
+				7E0D52101B11169B00B1B7CE /* TabBarController.h */,
+				7E0D52111B11169B00B1B7CE /* TabBarController.m */,
 				49BF5C1F1B10FFE9006454CD /* AppDelegate.h */,
 				49BF5C201B10FFE9006454CD /* AppDelegate.m */,
 				49BF5C221B10FFE9006454CD /* FirstViewController.h */,
@@ -275,7 +292,11 @@
 			files = (
 				49BF5C2A1B10FFE9006454CD /* Main.storyboard in Resources */,
 				49BF5C2F1B10FFE9006454CD /* LaunchScreen.xib in Resources */,
+				7E0D52141B1117A500B1B7CE /* group_icon@2x.png in Resources */,
+				7E0D52181B111C1D00B1B7CE /* events_icon@2x.png in Resources */,
 				49BF5C2C1B10FFE9006454CD /* Images.xcassets in Resources */,
+				7E0D52161B111B0F00B1B7CE /* person@2x.png in Resources */,
+				7ED2C4FB1B1122D700EE4952 /* profile_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +316,7 @@
 			files = (
 				49BF5C271B10FFE9006454CD /* SecondViewController.m in Sources */,
 				49BF5C211B10FFE9006454CD /* AppDelegate.m in Sources */,
+				7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */,
 				49BF5C241B10FFE9006454CD /* FirstViewController.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
 			);
@@ -429,6 +451,7 @@
 					"$(PROJECT_DIR)/Friender.xcodeproj",
 				);
 				INFOPLIST_FILE = Friender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -445,6 +468,7 @@
 					"$(PROJECT_DIR)/Friender.xcodeproj",
 				);
 				INFOPLIST_FILE = Friender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
