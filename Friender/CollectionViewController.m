@@ -9,7 +9,10 @@
 #import "CollectionViewController.h"
 #import "CollectionViewCell.h"
 
-@interface CollectionViewController ()
+@interface CollectionViewController (){
+ NSArray *eventPhotos;
+}
+
 
 @end
 
@@ -17,8 +20,14 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    // Initialize recipe image array
+    eventPhotos = [NSArray arrayWithObjects:@"event.png", @"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png", nil];
+}
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -27,13 +36,12 @@ static NSString * const reuseIdentifier = @"Cell";
   //  [self.collectionView registerClass:[UICollectionViewCell class] //forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 /*
 #pragma mark - Navigation
@@ -48,23 +56,37 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete method implementation -- Return the number of sections
     return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 //#warning Incomplete method implementation -- Return the number of items in the section
-    return 50;
+    //return 50;
+     return [eventPhotos count];
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *identifier = @"Cell";
     
-    // Configure the cell
-    cell.textLabel.text = [NSString stringWithFormat:@"%li", (long)indexPath.row + 1];
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    
+    cell.backgroundImageView.image = [UIImage imageNamed:[eventPhotos objectAtIndex:indexPath.row]];
+    
     return cell;
 }
+
+
+//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+   // CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+ //   // Configure the cell
+ //   cell.textLabel.text = [NSString stringWithFormat:@"%li", (long)indexPath.row + 1];
+   // return cell;
+//}
+
+
 
 #pragma mark <UICollectionViewDelegate>
 //Tapped cell
