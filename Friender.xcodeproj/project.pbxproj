@@ -167,6 +167,7 @@
 				49BF5C261B10FFE9006454CD /* SecondViewController.m */,
 				49BF5C2B1B10FFE9006454CD /* Images.xcassets */,
 				49BF5C2D1B10FFE9006454CD /* LaunchScreen.xib */,
+				D252A3691B1124AE001E1036 /* Images */,
 				49BF5C1B1B10FFE9006454CD /* Supporting Files */,
 			);
 			path = Friender;
@@ -221,6 +222,16 @@
 			);
 			name = Frameworks;
 			path = Friender.xcodeproj;
+			sourceTree = "<group>";
+		};
+		D252A3691B1124AE001E1036 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D252A36E1B11266D001E1036 /* event copy.png */,
+				D252A36A1B1124C5001E1036 /* event.png */,
+			);
+			name = Images;
+			path = ../Friender.xcodeproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,10 +339,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2A72DFC1B11190F00BCAC57 /* CollectionViewCell.m in Sources */,
 				49BF5C271B10FFE9006454CD /* SecondViewController.m in Sources */,
 				49BF5C211B10FFE9006454CD /* AppDelegate.m in Sources */,
 				7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */,
 				49BF5C241B10FFE9006454CD /* FirstViewController.m in Sources */,
+				D2A72DF91B1118EB00BCAC57 /* CollectionViewController.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
 				49BF5C711B1120E4006454CD /* FBLoginViewController.m in Sources */,
 			);
