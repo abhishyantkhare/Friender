@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FBLoginViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIView *facebookLoginButtonView;
+
 
 @end

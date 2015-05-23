@@ -20,7 +20,9 @@
     [super viewDidLoad];
     // Set up Facebook login button
     FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    [self.facebookLoginButtonView addSubview:loginButton];
+    loginButton.center = self.view.center;
+    loginButton.frame = CGRectOffset(loginButton.frame, 0, 50);
+    [self.view addSubview:loginButton];
 }
 
 - (void)didReceiveMemoryWarning {
