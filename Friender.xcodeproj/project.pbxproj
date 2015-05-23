@@ -28,6 +28,7 @@
 		49BF5C5A1B1108CB006454CD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C591B1108CB006454CD /* SystemConfiguration.framework */; };
 		49BF5C5C1B1108D0006454CD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C5B1B1108D0006454CD /* libz.dylib */; };
 		49BF5C5E1B1108D5006454CD /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C5D1B1108D5006454CD /* libsqlite3.dylib */; };
+		49BF5C601B110A02006454CD /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C5F1B110A02006454CD /* ParseFacebookUtilsV4.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		49BF5C591B1108CB006454CD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		49BF5C5B1B1108D0006454CD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		49BF5C5D1B1108D5006454CD /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		49BF5C5F1B110A02006454CD /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "../../../../../Downloads/parse-library-1.7.4/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			files = (
 				49BF5C5E1B1108D5006454CD /* libsqlite3.dylib in Frameworks */,
 				49BF5C5C1B1108D0006454CD /* libz.dylib in Frameworks */,
+				49BF5C601B110A02006454CD /* ParseFacebookUtilsV4.framework in Frameworks */,
 				49BF5C5A1B1108CB006454CD /* SystemConfiguration.framework in Frameworks */,
 				49BF5C581B1108C6006454CD /* StoreKit.framework in Frameworks */,
 				49BF5C561B1108C1006454CD /* Security.framework in Frameworks */,
@@ -169,6 +172,7 @@
 			children = (
 				49BF5C5D1B1108D5006454CD /* libsqlite3.dylib */,
 				49BF5C5B1B1108D0006454CD /* libz.dylib */,
+				49BF5C5F1B110A02006454CD /* ParseFacebookUtilsV4.framework */,
 				49BF5C591B1108CB006454CD /* SystemConfiguration.framework */,
 				49BF5C571B1108C6006454CD /* StoreKit.framework */,
 				49BF5C551B1108C1006454CD /* Security.framework */,
