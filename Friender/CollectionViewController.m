@@ -26,7 +26,8 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
 
     // Initialize recipe image array
-    eventPhotos = [NSArray arrayWithObjects:@"event.png", @"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png", nil];
+    eventPhotos = [NSArray arrayWithObjects:@"event.png",
+                   nil];
 }
     
     // Uncomment the following line to preserve selection between presentations
