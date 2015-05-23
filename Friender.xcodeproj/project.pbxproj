@@ -91,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BF5C6E1B111872006454CD /* FBSDKLoginKit.framework in Frameworks */,
 				49BF5C5E1B1108D5006454CD /* libsqlite3.dylib in Frameworks */,
 				49BF5C5C1B1108D0006454CD /* libz.dylib in Frameworks */,
 				49BF5C5A1B1108CB006454CD /* SystemConfiguration.framework in Frameworks */,
@@ -104,6 +105,7 @@
 				49BF5C521B1108B8006454CD /* MobileCoreServices.framework in Frameworks */,
 				49BF5C501B1108B4006454CD /* CoreLocation.framework in Frameworks */,
 				49BF5C4E1B1108B1006454CD /* CoreGraphics.framework in Frameworks */,
+				49BF5C6D1B111872006454CD /* FBSDKCoreKit.framework in Frameworks */,
 				49BF5C4C1B1108AD006454CD /* CFNetwork.framework in Frameworks */,
 				49BF5C4A1B1108A9006454CD /* AudioToolbox.framework in Frameworks */,
 			);
@@ -149,11 +151,13 @@
 				7E0D52111B11169B00B1B7CE /* TabBarController.m */,
 				49BF5C1F1B10FFE9006454CD /* AppDelegate.h */,
 				49BF5C201B10FFE9006454CD /* AppDelegate.m */,
+				49BF5C281B10FFE9006454CD /* Main.storyboard */,
+				49BF5C6F1B1120E4006454CD /* FBLoginViewController.h */,
+				49BF5C701B1120E4006454CD /* FBLoginViewController.m */,
 				49BF5C221B10FFE9006454CD /* FirstViewController.h */,
 				49BF5C231B10FFE9006454CD /* FirstViewController.m */,
 				49BF5C251B10FFE9006454CD /* SecondViewController.h */,
 				49BF5C261B10FFE9006454CD /* SecondViewController.m */,
-				49BF5C281B10FFE9006454CD /* Main.storyboard */,
 				49BF5C2B1B10FFE9006454CD /* Images.xcassets */,
 				49BF5C2D1B10FFE9006454CD /* LaunchScreen.xib */,
 				49BF5C1B1B10FFE9006454CD /* Supporting Files */,
@@ -190,6 +194,8 @@
 		49BF5C481B110841006454CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49BF5C6B1B111872006454CD /* FBSDKCoreKit.framework */,
+				49BF5C6C1B111872006454CD /* FBSDKLoginKit.framework */,
 				49BF5C631B110B9A006454CD /* Bolts.framework */,
 				49BF5C641B110B9A006454CD /* Parse.framework */,
 				49BF5C651B110B9A006454CD /* ParseCrashReporting.framework */,
@@ -259,6 +265,7 @@
 				TargetAttributes = {
 					49BF5C171B10FFE9006454CD = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = GH8FNE3Q82;
 					};
 					49BF5C331B10FFE9006454CD = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -319,6 +326,7 @@
 				7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */,
 				49BF5C241B10FFE9006454CD /* FirstViewController.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
+				49BF5C711B1120E4006454CD /* FBLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,16 +452,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/andrew/Downloads/parse-library-1.7.4",
 					"/Users/abhishyant/Downloads/parse-library-1.7.4",
 					"$(PROJECT_DIR)/Friender.xcodeproj",
+					/Users/andrew/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Friender/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -461,16 +473,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/andrew/Downloads/parse-library-1.7.4",
 					"/Users/abhishyant/Downloads/parse-library-1.7.4",
 					"$(PROJECT_DIR)/Friender.xcodeproj",
+					/Users/andrew/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Friender/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
