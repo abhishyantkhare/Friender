@@ -26,7 +26,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [super viewDidLoad];
 
     // Initialize recipe image array
-    eventPhotos = [NSArray arrayWithObjects:@"event.png",
+    eventPhotos = [NSArray arrayWithObjects:@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",
                    nil];
 }
     
@@ -92,7 +92,8 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDelegate>
 //Tapped cell
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    NSLog(@"Tapped %ld cell! It had %@ image!", (long)indexPath.row, [eventPhotos objectAtIndex:indexPath.row]);
+    [self performSegueWithIdentifier:@"expandEvent" sender:self];
 }
 //Deselected cell (lifted finger)
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
