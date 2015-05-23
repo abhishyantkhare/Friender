@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // *** Parse stuff ***
     // [Optional] Power your app with Local Datastore. For more info, go to
     // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
@@ -28,6 +30,10 @@
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    // *** FB stuff ***
+    
+    [FBSDKLoginButton class];
     
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];

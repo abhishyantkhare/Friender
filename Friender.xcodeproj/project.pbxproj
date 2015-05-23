@@ -32,6 +32,7 @@
 		49BF5C6A1B110B9A006454CD /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */; };
 		49BF5C6D1B111872006454CD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C6B1B111872006454CD /* FBSDKCoreKit.framework */; };
 		49BF5C6E1B111872006454CD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C6C1B111872006454CD /* FBSDKLoginKit.framework */; };
+		49BF5C711B1120E4006454CD /* FBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BF5C701B1120E4006454CD /* FBLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		49BF5C6B1B111872006454CD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		49BF5C6C1B111872006454CD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		49BF5C6F1B1120E4006454CD /* FBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginViewController.h; sourceTree = "<group>"; };
+		49BF5C701B1120E4006454CD /* FBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +141,13 @@
 			children = (
 				49BF5C1F1B10FFE9006454CD /* AppDelegate.h */,
 				49BF5C201B10FFE9006454CD /* AppDelegate.m */,
+				49BF5C281B10FFE9006454CD /* Main.storyboard */,
+				49BF5C6F1B1120E4006454CD /* FBLoginViewController.h */,
+				49BF5C701B1120E4006454CD /* FBLoginViewController.m */,
 				49BF5C221B10FFE9006454CD /* FirstViewController.h */,
 				49BF5C231B10FFE9006454CD /* FirstViewController.m */,
 				49BF5C251B10FFE9006454CD /* SecondViewController.h */,
 				49BF5C261B10FFE9006454CD /* SecondViewController.m */,
-				49BF5C281B10FFE9006454CD /* Main.storyboard */,
 				49BF5C2B1B10FFE9006454CD /* Images.xcassets */,
 				49BF5C2D1B10FFE9006454CD /* LaunchScreen.xib */,
 				49BF5C1B1B10FFE9006454CD /* Supporting Files */,
@@ -306,6 +311,7 @@
 				49BF5C211B10FFE9006454CD /* AppDelegate.m in Sources */,
 				49BF5C241B10FFE9006454CD /* FirstViewController.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
+				49BF5C711B1120E4006454CD /* FBLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +447,7 @@
 					/Users/andrew/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Friender/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -462,7 +468,7 @@
 					/Users/andrew/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Friender/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
