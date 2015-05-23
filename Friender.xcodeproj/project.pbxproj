@@ -30,6 +30,8 @@
 		49BF5C681B110B9A006454CD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C641B110B9A006454CD /* Parse.framework */; };
 		49BF5C691B110B9A006454CD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C651B110B9A006454CD /* ParseCrashReporting.framework */; };
 		49BF5C6A1B110B9A006454CD /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */; };
+		D252A36B1B1124C5001E1036 /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = D252A36A1B1124C5001E1036 /* event.png */; };
+		D252A36F1B11266D001E1036 /* event copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D252A36E1B11266D001E1036 /* event copy.png */; };
 		D2A72DF91B1118EB00BCAC57 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */; };
 		D2A72DFC1B11190F00BCAC57 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72DFB1B11190F00BCAC57 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
@@ -75,6 +77,8 @@
 		49BF5C641B110B9A006454CD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		49BF5C651B110B9A006454CD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		49BF5C661B110B9A006454CD /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		D252A36A1B1124C5001E1036 /* event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event.png; sourceTree = "<group>"; };
+		D252A36E1B11266D001E1036 /* event copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "event copy.png"; path = "../Friender/event copy.png"; sourceTree = "<group>"; };
 		D2A72DF71B1118EB00BCAC57 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		D2A72DFA1B11190F00BCAC57 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 				D2A72DFB1B11190F00BCAC57 /* CollectionViewCell.m */,
 				49BF5C2B1B10FFE9006454CD /* Images.xcassets */,
 				49BF5C2D1B10FFE9006454CD /* LaunchScreen.xib */,
+				D252A3691B1124AE001E1036 /* Images */,
 				49BF5C1B1B10FFE9006454CD /* Supporting Files */,
 			);
 			path = Friender;
@@ -201,6 +206,16 @@
 			);
 			name = Frameworks;
 			path = Friender.xcodeproj;
+			sourceTree = "<group>";
+		};
+		D252A3691B1124AE001E1036 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D252A36E1B11266D001E1036 /* event copy.png */,
+				D252A36A1B1124C5001E1036 /* event.png */,
+			);
+			name = Images;
+			path = ../Friender.xcodeproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +300,8 @@
 			files = (
 				49BF5C2A1B10FFE9006454CD /* Main.storyboard in Resources */,
 				49BF5C2F1B10FFE9006454CD /* LaunchScreen.xib in Resources */,
+				D252A36F1B11266D001E1036 /* event copy.png in Resources */,
+				D252A36B1B1124C5001E1036 /* event.png in Resources */,
 				49BF5C2C1B10FFE9006454CD /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
