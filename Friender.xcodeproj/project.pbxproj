@@ -150,6 +150,7 @@
 				49BF5C261B10FFE9006454CD /* SecondViewController.m */,
 				49BF5C2B1B10FFE9006454CD /* Images.xcassets */,
 				49BF5C2D1B10FFE9006454CD /* LaunchScreen.xib */,
+				49BF5C721B11341E006454CD /* Images */,
 				49BF5C1B1B10FFE9006454CD /* Supporting Files */,
 			);
 			path = Friender;
@@ -204,6 +205,14 @@
 			);
 			name = Frameworks;
 			path = Friender.xcodeproj;
+			sourceTree = "<group>";
+		};
+		49BF5C721B11341E006454CD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			path = ../Friender.xcodeproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
