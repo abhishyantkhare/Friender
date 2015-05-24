@@ -17,12 +17,15 @@
 @end
 
 @implementation ProfileViewController
-@synthesize profileImageView, userNameLabel, attendedAmountLabel, plannedAmountLabel, friendsAmountLabel;
+@synthesize profileImageView, userNameLabel, attendedAmountLabel, plannedAmountLabel, friendsAmountLabel,interestOneImage,interestTwoImage,interestThreeImage;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     profileImageView = [self convertImageViewToCircle:profileImageView];
+    interestOneImage = [self convertImageViewToCircle:interestOneImage];
+    interestTwoImage = [self convertImageViewToCircle:interestTwoImage];
+    interestThreeImage = [self convertImageViewToCircle:interestThreeImage];
     userNameLabel.text = @"Hulio Jaures";//[PFUser currentUser][@"name"];
     attendedAmountLabel.text = [NSString stringWithFormat:@"%d", 24];
     plannedAmountLabel.text = [NSString stringWithFormat:@"%d", 2];

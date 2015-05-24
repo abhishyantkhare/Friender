@@ -16,4 +16,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *plannedAmountLabel;
 @property (strong, nonatomic) IBOutlet UILabel *friendsAmountLabel;
 
+@property (strong, nonatomic) IBOutlet UIImageView *interestOneImage;
+@property (strong, nonatomic) IBOutlet UIImageView *interestTwoImage;
+@property (strong, nonatomic) IBOutlet UIImageView *interestThreeImage;
+
 @end
