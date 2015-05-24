@@ -12,5 +12,8 @@
 @property IBOutlet UIDatePicker* datePicker;
 - (IBAction)datePickerPicked:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *dateLabel;
+@property (strong, nonatomic) IBOutlet UITextField *nameLabel;
+@property (strong, nonatomic) IBOutlet UITextField *locationLabel;
+- (IBAction)createEventPressed:(id)sender;
 
 @end

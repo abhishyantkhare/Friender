@@ -7,17 +7,21 @@
 //
 
 #import "CreateEventViewController.h"
+#import <Parse/Parse.h>
 
-@interface CreateEventViewController () 
+@interface CreateEventViewController () {
+    NSDate *myDate;
+}
 
 @end
 
 @implementation CreateEventViewController
-@synthesize dateLabel;
+@synthesize dateLabel,nameLabel,locationLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    myDate = [NSDate date];
     dateLabel.text = [self convertWithDate:[NSDate date]];
 }
 
@@ -26,20 +30,8 @@
    // Dispose of any resources that can be recreated.
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-
 - (IBAction)datePickerPicked:(id)sender {
-    NSDate *myDate = self.datePicker.date;
+    myDate = self.datePicker.date;
     dateLabel.text = [self convertWithDate:myDate];
 }
 
@@ -48,5 +40,27 @@
     [dateFormat setDateFormat:@"cccc, MMM d, hh:mm aa"];
     NSString *dateString = [dateFormat stringFromDate:date];
     return dateString;
+}
+- (IBAction)createEventPressed:(id)sender {
+    PFObject *event = [PFObject objectWithClassName:@"Event"];
+    event[@"date"] = myDate;
+    event[@"name"] = nameLabel.text;
+    event[@"location"] = locationLabel.text;
+    [event saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            // The object has been saved.
+            [self showAlert:@"Event saved successfully!" title:@"Success!"];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        } else {
+            // There was a problem, check error.description
+            [self showAlert:@"Error saving event!" title:@"Oh noes!"];
+        }
+    }];
+}
+
+- (void)showAlert:(NSString *)message title:(NSString *)title {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    alert.alertViewStyle = UIAlertViewStyleDefault;
+    [alert show];
 }
 @end
