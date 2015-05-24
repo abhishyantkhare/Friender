@@ -54,7 +54,7 @@
         if (succeeded) {
             // The object has been saved.
             [self showAlert:@"Event saved successfully!" title:@"Success!"];
-            [self dismissViewControllerAnimated:YES completion:nil];
+            [self.navigationController popViewControllerAnimated:YES];
         } else {
             // There was a problem, check error.description
             [self showAlert:@"Error saving event!" title:@"Oh noes!"];

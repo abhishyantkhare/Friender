@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
 
 @interface CollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
-
-
-
+@property (strong, nonatomic) IBOutlet UILabel *eventName;
+@property (strong, nonatomic) IBOutlet UILabel *eventLocation;
 
 @end

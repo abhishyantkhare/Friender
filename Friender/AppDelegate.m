@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <ParseFacebookUtilsV4/PFFacebookUtils.h>
@@ -31,6 +32,8 @@
     
     // [Optional] Track statistics around application opens.
     //[PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [PFImageView class];
     
     // Integrate with FB
     [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
