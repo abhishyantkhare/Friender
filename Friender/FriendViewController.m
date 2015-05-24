@@ -222,7 +222,7 @@
         destViewController.friendsAmountLabel.text = @"29";
         destViewController.InterestOneLabel.text = @"Int 1";
         destViewController.InterestTwoLabel.text = @"Int 2";
-        destViewController.InterestThreeLabel.text = @"Int 3";
+        destViewController.InterestThreeLabel.text = @"Int  3";
     }
 }
 
