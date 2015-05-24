@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateEventViewController : UIViewController
+@interface CreateEventViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIAlertViewDelegate>
 @property IBOutlet UIDatePicker* datePicker;
 - (IBAction)datePickerPicked:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *dateLabel;
 @property (strong, nonatomic) IBOutlet UITextField *nameLabel;
 @property (strong, nonatomic) IBOutlet UITextField *locationLabel;
 - (IBAction)createEventPressed:(id)sender;
+- (IBAction)choosePhotoPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *uploadedImageView;
 
 @end

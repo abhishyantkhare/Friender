@@ -11,12 +11,13 @@
 
 @interface CreateEventViewController () {
     NSDate *myDate;
+    UIImage *chosenImage;
 }
 
 @end
 
 @implementation CreateEventViewController
-@synthesize dateLabel,nameLabel,locationLabel;
+@synthesize dateLabel,nameLabel,locationLabel,uploadedImageView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,7 +28,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-   // Dispose of any resources that can be recreated.
+    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)datePickerPicked:(id)sender {
@@ -43,28 +44,29 @@
 }
 
 // Convert to JPEG with 50% quality
-NSData* data = UIImageJPEGRepresentation(imageView.image, 0.5f);
-PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:data];
-
-// Save the image to Parse
-
-[imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-    if (!error) {
-        // The image has now been uploaded to Parse. Associate it with a new object
-        PFObject* newPhotoObject = [PFObject objectWithClassName:@"PhotoObject"];
-        [newPhotoObject setObject:imageFile forKey:@"image"];
-        
-        [newPhotoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            if (!error) {
-                NSLog(@"Saved");
-            }
-            else{
-                // Error
-                NSLog(@"Error: %@ %@", error, [error userInfo]);
-            }
-        }];
-    }
-}];
+/*
+ NSData* data = UIImageJPEGRepresentation(imageView.image, 0.5f);
+ PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:data];
+ 
+ // Save the image to Parse
+ 
+ [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+ if (!error) {
+ // The image has now been uploaded to Parse. Associate it with a new object
+ PFObject* newPhotoObject = [PFObject objectWithClassName:@"PhotoObject"];
+ [newPhotoObject setObject:imageFile forKey:@"image"];
+ 
+ [newPhotoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+ if (!error) {
+ NSLog(@"Saved");
+ }
+ else{
+ // Error
+ NSLog(@"Error: %@ %@", error, [error userInfo]);
+ }
+ }];
+ }
+ }];*/
 
 - (IBAction)createEventPressed:(id)sender {
     PFObject *event = [PFObject objectWithClassName:@"Event"];
@@ -81,6 +83,84 @@ PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:data];
             [self showAlert:@"Error saving event!" title:@"Oh noes!"];
         }
     }];
+}
+
+#pragma mark Photo Picker Delegate Methods
+
+- (void)takePhoto {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+    
+}
+
+- (void)selectPhoto {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    chosenImage = info[UIImagePickerControllerEditedImage];
+    uploadedImageView.image = chosenImage;
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+
+#pragma mark Alert View Delegate Methods
+
+- (IBAction)choosePhotoPressed:(id)sender {
+    
+    
+    [self showMultiChoiceAlert:@"Please choose a photo picking method." title:@"Upload Photo"];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex != [alertView cancelButtonIndex]) {
+        if (buttonIndex == 0) {
+            // Select Photo
+            [self selectPhoto];
+        } else {
+            // Take Photo
+            if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+                
+                UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                      message:@"Device has no camera"
+                                                                     delegate:nil
+                                                            cancelButtonTitle:@"OK"
+                                                            otherButtonTitles: nil];
+                
+                [myAlertView show];
+                
+            } else {
+                [self takePhoto];
+            }
+            
+        }
+    }
+}
+
+- (void)showMultiChoiceAlert:(NSString *)message title:(NSString *)title {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:nil otherButtonTitles:@"Choose Photo",@"Take Photo",nil];
+    alert.alertViewStyle = UIAlertViewStyleDefault;
+    [alert show];
 }
 
 - (void)showAlert:(NSString *)message title:(NSString *)title {
