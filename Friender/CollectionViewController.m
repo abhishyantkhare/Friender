@@ -73,7 +73,16 @@ static NSString * const reuseIdentifier = @"Cell";
     
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
-    cell.backgroundImageView.image = [UIImage imageNamed:[eventPhotos objectAtIndex:indexPath.row]];
+    UIImage *cellBackground = [UIImage imageNamed:[eventPhotos objectAtIndex:indexPath.row]];
+    UIImage *textShadowImage = [UIImage imageNamed:@"shadow.png"];
+    
+    UIGraphicsBeginImageContext(cellBackground.size);
+    [cellBackground drawInRect:CGRectMake(0, 0, cellBackground.size.width, cellBackground.size.height)];
+    [textShadowImage drawInRect:CGRectMake(cellBackground.size.width - textShadowImage.size.width,cellBackground.size.height - textShadowImage.size.height, textShadowImage.size.width, textShadowImage.size.height)];
+    cell.backgroundImageView.image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    cell.nameLabel.text = @" Dick Meeting";
+    cell.descriptionLabel.text = @" Come take a shit with the best of the rest of the best!";
     
     return cell;
 }

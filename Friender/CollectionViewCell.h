@@ -10,6 +10,8 @@
 
 @interface CollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 
 
