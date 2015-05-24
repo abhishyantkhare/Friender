@@ -33,6 +33,7 @@
 @synthesize position = _position;
 @synthesize userLocation = _userLocation;
 @synthesize OtherPic = _OtherPic;
+@synthesize arrayPos = _arrayPos;
 
 
 
@@ -202,6 +203,8 @@
                         [cardPic setFrame:cardPicFrame];
                         UILabel* info = [[UILabel alloc] init];
                         [card addSubview:info];
+                        
+                        [info setTag:1];
                         info.font = [UIFont systemFontOfSize:24];
                         info.textColor = [UIColor whiteColor];
                         info.text = [user objectForKey:@"FBName"];
@@ -248,6 +251,7 @@
                     leftLabel.center = left;
                     [self.view addSubview:leftLabel];
                     
+                    
 
                    
                 } else {
@@ -287,14 +291,25 @@
 
 -(void)cardTapped:(UITapGestureRecognizer *) recognizer{
     [self performSegueWithIdentifier:@"bigProfile" sender:self.view];
+    _arrayPos = [self.peopleArray indexOfObject:self.view];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"bigProfile"]) {
         
         ProfileViewController *destViewController = segue.destinationViewController;
+        UIView* card = [self.peopleArray objectAtIndex:_arrayPos];
+        for(UIView* view in card.subviews){
+            if([view isKindOfClass:[UILabel class]]){
+                UILabel *newLbl = (UILabel *)view;
+                if(newLbl.tag == 1){
+                    destViewController.userNameLabel.text =  newLbl.text;
+                    /// Write your code
+                }
+            }
+        }
         //destViewController.profileImageView.image
-        destViewController.userNameLabel.text = @"Your Friend";
+        
         destViewController.attendedAmountLabel.text = @"16";
         destViewController.plannedAmountLabel.text = @"7";
         destViewController.friendsAmountLabel.text = @"29";

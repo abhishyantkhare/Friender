@@ -19,6 +19,7 @@
 @property(nonatomic) NSInteger position;
 @property (nonatomic, strong) PFGeoPoint *userLocation;
 @property (nonatomic, strong) UIImage* OtherPic;
+@property (nonatomic) NSInteger arrayPos;
 
 
 @end

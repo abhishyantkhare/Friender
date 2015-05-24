@@ -33,6 +33,7 @@
             NSString *facebookID = userData[@"id"];
             NSString *name = userData[@"name"];
             currentUser[@"FBName"] = name;
+            NSLog(@"THE CURRENT USER IS %@", currentUser[@"FBName"]);
             [currentUser saveInBackground];
             userNameLabel.text = name;
             NSString *location = userData[@"location"][@"name"];
