@@ -22,6 +22,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil];
+    [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+        if (!error) {
+            // result is a dictionary with the user's Facebook data
+            NSDictionary *userData = (NSDictionary *)result;
+            
+            NSString *facebookID = userData[@"id"];
+            NSString *name = userData[@"name"];
+            userNameLabel.text = name;
+            NSString *location = userData[@"location"][@"name"];
+            NSString *gender = userData[@"gender"];
+            NSString *birthday = userData[@"birthday"];
+            NSString *relationship = userData[@"relationship_status"];
+            
+            
+            NSURL *pictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID]];
+            
+            NSURLRequest *urlRequest = [NSURLRequest requestWithURL:pictureURL];
+            
+            // Run network request asynchronously
+            [NSURLConnection sendAsynchronousRequest:urlRequest
+                                               queue:[NSOperationQueue mainQueue]
+                                   completionHandler:
+             ^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                 if (connectionError == nil && data != nil) {
+                     [profileImageView setImage:[UIImage imageWithData:data]];
+                     
+                     
+                     // Set the image in the imageView
+                     // ...
+                 }
+             }];
+            
+            
+            // Now add the data to the UI elements
+            // ...
+        }
+        // handle response
+    }];
     profileImageView = [self convertImageViewToCircle:profileImageView];
     interestOneImage = [self convertImageViewToCircle:interestOneImage];
     interestTwoImage = [self convertImageViewToCircle:interestTwoImage];
