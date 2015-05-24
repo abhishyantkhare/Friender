@@ -148,8 +148,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frienderLogo.png" id="Ugr-Yx-uGl">
+                                <rect key="frame" x="33" y="222" width="313" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OVb-tT-1w4">
-                                <rect key="frame" x="33" y="405" width="255" height="37"/>
+                                <rect key="frame" x="60" y="309" width="255" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="facebook_button_unpressed.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,7 +163,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.2303334735" green="0.86871054290000005" blue="0.70569553129999996" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="btT-a8-6yU"/>
                     <connections>
@@ -168,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHo-Ap-B2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-402" y="0.0"/>
+            <point key="canvasLocation" x="-416" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -213,6 +217,7 @@
     <resources>
         <image name="events_icon.png" width="25" height="25"/>
         <image name="facebook_button_unpressed.png" width="638" height="95"/>
+        <image name="frienderLogo.png" width="731" height="132"/>
         <image name="group_icon.png" width="25" height="25"/>
         <image name="profile_icon.png" width="25" height="25"/>
     </resources>
