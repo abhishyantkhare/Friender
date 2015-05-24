@@ -11,6 +11,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <Parse/Parse.h>
 #import <QuartzCore/QuartzCore.h>
+#import <ParseUI/ParseUI.h>
 
 @interface ProfileViewController ()
 
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     PFUser* currentUser = [PFUser currentUser];
-    
+         NSLog(@"THE CURRENT USER IS %@", currentUser.username);
     // Do any additional setup after loading the view.
     FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil];
     [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
@@ -33,7 +34,7 @@
             NSString *facebookID = userData[@"id"];
             NSString *name = userData[@"name"];
             currentUser[@"FBName"] = name;
-            NSLog(@"THE CURRENT USER IS %@", currentUser[@"FBName"]);
+       
             [currentUser saveInBackground];
             userNameLabel.text = name;
             NSString *location = userData[@"location"][@"name"];
@@ -68,6 +69,12 @@
         }
         // handle response
     }];
+    userNameLabel.text = currentUser[@"FBName"];
+    PFImageView* cardPic = [[PFImageView alloc] init];
+    //cardPic.image = [UIImage imageNamed:@"mainPic.jpg"];
+    cardPic.file = currentUser[@"ProfilePic"];
+    [cardPic loadInBackground];
+    profileImageView = cardPic;
     profileImageView = [self convertImageViewToCircle:profileImageView];
     interestOneImage = [self convertImageViewToCircle:interestOneImage];
     interestTwoImage = [self convertImageViewToCircle:interestTwoImage];
