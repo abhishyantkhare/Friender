@@ -105,7 +105,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="UFy-Cl-OOX">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="LZw-kc-C4j"/>
+                        <barButtonItem key="leftBarButtonItem" image="reload_icon.png" id="LZw-kc-C4j">
+                            <connections>
+                                <action selector="reloadButtonPressed:" destination="3ur-DW-Kzb" id="Ioz-lf-sCx"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9sv-GK-RJ3">
                             <connections>
                                 <segue destination="6Pn-qD-W2R" kind="push" id="IaL-8s-VyF"/>
@@ -329,6 +333,7 @@
         <image name="frienderLogo.png" width="731" height="132"/>
         <image name="group_icon.png" width="25" height="25"/>
         <image name="profile_icon.png" width="25" height="25"/>
+        <image name="reload_icon.png" width="32" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
