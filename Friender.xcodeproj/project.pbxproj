@@ -39,6 +39,7 @@
 		7E0D52141B1117A500B1B7CE /* group_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52131B1117A500B1B7CE /* group_icon@2x.png */; };
 		7E0D52161B111B0F00B1B7CE /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52151B111B0F00B1B7CE /* person@2x.png */; };
 		7E0D52181B111C1D00B1B7CE /* events_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */; };
+		7EC3B9B01B11815000052147 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3B9AF1B11815000052147 /* FriendViewController.m */; };
 		7ED2C4FB1B1122D700EE4952 /* profile_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */; };
 		D252A36B1B1124C5001E1036 /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = D252A36A1B1124C5001E1036 /* event.png */; };
 		D28C2AA61B113D7C00B34839 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28C2AA51B113D7C00B34839 /* FBSDKCoreKit.framework */; };
@@ -101,6 +102,8 @@
 		7E0D52131B1117A500B1B7CE /* group_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group_icon@2x.png"; path = "../Friender/group_icon@2x.png"; sourceTree = "<group>"; };
 		7E0D52151B111B0F00B1B7CE /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "person@2x.png"; path = "../Friender/person@2x.png"; sourceTree = "<group>"; };
 		7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "events_icon@2x.png"; path = "../Friender/events_icon@2x.png"; sourceTree = "<group>"; };
+		7EC3B9AE1B11815000052147 /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
+		7EC3B9AF1B11815000052147 /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
 		7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile_icon@2x.png"; path = "../Friender/profile_icon@2x.png"; sourceTree = "<group>"; };
 		D252A36A1B1124C5001E1036 /* event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event.png; sourceTree = "<group>"; };
 		D28C2AA51B113D7C00B34839 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 		49BF5C1A1B10FFE9006454CD /* Friender */ = {
 			isa = PBXGroup;
 			children = (
+				7EC3B9AE1B11815000052147 /* FriendViewController.h */,
+				7EC3B9AF1B11815000052147 /* FriendViewController.m */,
 				7E0D52101B11169B00B1B7CE /* TabBarController.h */,
 				7E0D52111B11169B00B1B7CE /* TabBarController.m */,
 				49BF5C1F1B10FFE9006454CD /* AppDelegate.h */,
@@ -378,6 +383,7 @@
 				49BF5C211B10FFE9006454CD /* AppDelegate.m in Sources */,
 				49BF5C861B116F7F006454CD /* ProfileViewController.m in Sources */,
 				7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */,
+				7EC3B9B01B11815000052147 /* FriendViewController.m in Sources */,
 				D2A72DF91B1118EB00BCAC57 /* CollectionViewController.m in Sources */,
 				49BF5C771B1146BE006454CD /* FBMissingSymbols.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
