@@ -7,6 +7,9 @@
 //
 
 #import "ProfileViewController.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <Parse/Parse.h>
 
 @interface ProfileViewController ()
 
@@ -35,4 +38,8 @@
 }
 */
 
+- (IBAction)logOutButton:(id)sender {
+    [PFUser logOutInBackground];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
