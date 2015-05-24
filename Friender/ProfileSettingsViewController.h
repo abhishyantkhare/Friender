@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.h
+//  ProfileSettingsViewController.h
 //  Friender
 //
 //  Created by Andrew Morgan on 5/23/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UIImageView *profileImageView;
+@interface ProfileSettingsViewController : UIViewController
+- (IBAction)logOutButton:(id)sender;
 
 @end

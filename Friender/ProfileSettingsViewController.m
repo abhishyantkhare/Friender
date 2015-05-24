@@ -1,34 +1,23 @@
 //
-//  ProfileViewController.m
+//  ProfileSettingsViewController.m
 //  Friender
 //
 //  Created by Andrew Morgan on 5/23/15.
 //  Copyright (c) 2015 CoDevelopers LLC. All rights reserved.
 //
 
-#import "ProfileViewController.h"
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "ProfileSettingsViewController.h"
 #import <Parse/Parse.h>
-#import <QuartzCore/QuartzCore.h>
 
-@interface ProfileViewController ()
+@interface ProfileSettingsViewController ()
 
 @end
 
-@implementation ProfileViewController
-@synthesize profileImageView;
+@implementation ProfileSettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    profileImageView = [self convertImageViewToCircle:profileImageView];
-}
-
--(UIImageView*)convertImageViewToCircle:(UIImageView*) imageViewToCirculize {
-    imageViewToCirculize.layer.cornerRadius = imageViewToCirculize.frame.size.width / 2;
-    imageViewToCirculize.layer.masksToBounds = YES;
-    return imageViewToCirculize;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,5 +35,9 @@
 }
 */
 
+- (IBAction)logOutButton:(id)sender {
+    [PFUser logOutInBackground];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

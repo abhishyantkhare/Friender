@@ -35,6 +35,9 @@
 		49BF5C7F1B1154FA006454CD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C7E1B1154FA006454CD /* Social.framework */; };
 		49BF5C811B11553F006454CD /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C801B11553F006454CD /* libstdc++.6.dylib */; };
 		49BF5C861B116F7F006454CD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BF5C851B116F7F006454CD /* ProfileViewController.m */; };
+		49BF5C881B118503006454CD /* settings_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BF5C871B118503006454CD /* settings_icon@2x.png */; };
+		49BF5C8B1B1185BB006454CD /* ProfileSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BF5C8A1B1185BB006454CD /* ProfileSettingsViewController.m */; };
+		49BF5C8D1B118668006454CD /* exit_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BF5C8C1B118667006454CD /* exit_icon@2x.png */; };
 		7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D52111B11169B00B1B7CE /* TabBarController.m */; };
 		7E0D52141B1117A500B1B7CE /* group_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52131B1117A500B1B7CE /* group_icon@2x.png */; };
 		7E0D52161B111B0F00B1B7CE /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52151B111B0F00B1B7CE /* person@2x.png */; };
@@ -97,6 +100,10 @@
 		49BF5C821B115F16006454CD /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		49BF5C841B116F7F006454CD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		49BF5C851B116F7F006454CD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		49BF5C871B118503006454CD /* settings_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_icon@2x.png"; sourceTree = "<group>"; };
+		49BF5C891B1185BB006454CD /* ProfileSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSettingsViewController.h; sourceTree = "<group>"; };
+		49BF5C8A1B1185BB006454CD /* ProfileSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileSettingsViewController.m; sourceTree = "<group>"; };
+		49BF5C8C1B118667006454CD /* exit_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exit_icon@2x.png"; sourceTree = "<group>"; };
 		7E0D52101B11169B00B1B7CE /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = ../TabBarController.h; sourceTree = "<group>"; };
 		7E0D52111B11169B00B1B7CE /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = ../TabBarController.m; sourceTree = "<group>"; };
 		7E0D52131B1117A500B1B7CE /* group_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group_icon@2x.png"; path = "../Friender/group_icon@2x.png"; sourceTree = "<group>"; };
@@ -187,6 +194,8 @@
 				49BF5C281B10FFE9006454CD /* Main.storyboard */,
 				49BF5C841B116F7F006454CD /* ProfileViewController.h */,
 				49BF5C851B116F7F006454CD /* ProfileViewController.m */,
+				49BF5C891B1185BB006454CD /* ProfileSettingsViewController.h */,
+				49BF5C8A1B1185BB006454CD /* ProfileSettingsViewController.m */,
 				D2A72DF71B1118EB00BCAC57 /* CollectionViewController.h */,
 				D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */,
 				D2A72DFA1B11190F00BCAC57 /* CollectionViewCell.h */,
@@ -257,6 +266,8 @@
 		D252A3691B1124AE001E1036 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				49BF5C8C1B118667006454CD /* exit_icon@2x.png */,
+				49BF5C871B118503006454CD /* settings_icon@2x.png */,
 				D2D7DFE61B116B9C001E25EC /* frienderLogo.png */,
 				7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */,
 				7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */,
@@ -353,6 +364,7 @@
 			files = (
 				49BF5C2A1B10FFE9006454CD /* Main.storyboard in Resources */,
 				49BF5C2F1B10FFE9006454CD /* LaunchScreen.xib in Resources */,
+				49BF5C8D1B118668006454CD /* exit_icon@2x.png in Resources */,
 				7E0D52141B1117A500B1B7CE /* group_icon@2x.png in Resources */,
 				7E0D52181B111C1D00B1B7CE /* events_icon@2x.png in Resources */,
 				49BF5C791B1152C0006454CD /* facebook_button_pressed.png in Resources */,
@@ -361,6 +373,7 @@
 				49BF5C2C1B10FFE9006454CD /* Images.xcassets in Resources */,
 				7E0D52161B111B0F00B1B7CE /* person@2x.png in Resources */,
 				D2D7DFE71B116B9C001E25EC /* frienderLogo.png in Resources */,
+				49BF5C881B118503006454CD /* settings_icon@2x.png in Resources */,
 				7ED2C4FB1B1122D700EE4952 /* profile_icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +401,7 @@
 				49BF5C771B1146BE006454CD /* FBMissingSymbols.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
 				49BF5C711B1120E4006454CD /* FBLoginViewController.m in Sources */,
+				49BF5C8B1B1185BB006454CD /* ProfileSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
