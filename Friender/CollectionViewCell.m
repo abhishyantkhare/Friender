@@ -12,6 +12,5 @@
 
 @implementation CollectionViewCell
 
-
 @end
 
