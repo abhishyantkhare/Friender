@@ -126,6 +126,18 @@
                     <view key="view" contentMode="scaleToFill" id="ZwW-Px-X4x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OVb-tT-1w4">
+                                <rect key="frame" x="33" y="405" width="255" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="facebook_button_unpressed.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithFacebookButton:" destination="2Fe-aG-wOa" eventType="touchUpInside" id="NvF-ky-URy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="btT-a8-6yU"/>
@@ -135,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHo-Ap-B2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-401.06666666666666" y="0.0"/>
+            <point key="canvasLocation" x="-402" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -158,6 +170,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook_button_unpressed.png" width="638" height="95"/>
         <image name="group_icon.png" width="25" height="25"/>
         <image name="profile_icon.png" width="25" height="25"/>
     </resources>

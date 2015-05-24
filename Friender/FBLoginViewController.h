@@ -10,5 +10,7 @@
 
 @interface FBLoginViewController : UIViewController
 
+- (IBAction)loginWithFacebookButton:(id)sender;
+
 
 @end

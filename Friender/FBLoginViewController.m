@@ -8,7 +8,7 @@
 
 #import "FBLoginViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 @interface FBLoginViewController ()
@@ -20,17 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Set up Facebook login button
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    /*FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
     loginButton.center = self.view.center;
-    loginButton.frame = CGRectOffset(loginButton.frame, 0, 50);
-    [self.view addSubview:loginButton];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    if ([FBSDKAccessToken currentAccessToken]) {
-        [self performSegueWithIdentifier:@"loginSegue" sender:self];
-    }
+    loginButton.frame = CGRectOffset(loginButton.frame, 0, 50);*/
 }
 
 
@@ -49,4 +41,13 @@
 }
 */
 
+- (IBAction)loginWithFacebookButton:(id)sender {
+    [PFFacebookUtils logInInBackgroundWithPublishPermissions:@[ @"publish_actions" ] block:^(PFUser *user, NSError *error) {
+        if (!user) {
+            NSLog(@"Uh oh. The user cancelled the Facebook login.");
+        } else {
+            NSLog(@"User now has publish permissions!");
+        }
+    }];
+}
 @end
