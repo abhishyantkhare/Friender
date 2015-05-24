@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ProfileViewController : UIViewController
-- (IBAction)logOutButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (strong, nonatomic) IBOutlet UILabel *userNameLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *attendedAmountLabel;
+@property (strong, nonatomic) IBOutlet UILabel *plannedAmountLabel;
+@property (strong, nonatomic) IBOutlet UILabel *friendsAmountLabel;
+
+@property (strong, nonatomic) IBOutlet UIImageView *interestOneImage;
+@property (strong, nonatomic) IBOutlet UIImageView *interestTwoImage;
+@property (strong, nonatomic) IBOutlet UIImageView *interestThreeImage;
 
 @end

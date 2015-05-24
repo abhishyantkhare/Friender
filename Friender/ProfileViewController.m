@@ -10,17 +10,32 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <Parse/Parse.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface ProfileViewController ()
 
 @end
 
 @implementation ProfileViewController
+@synthesize profileImageView, userNameLabel, attendedAmountLabel, plannedAmountLabel, friendsAmountLabel,interestOneImage,interestTwoImage,interestThreeImage;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    profileImageView = [self convertImageViewToCircle:profileImageView];
+    interestOneImage = [self convertImageViewToCircle:interestOneImage];
+    interestTwoImage = [self convertImageViewToCircle:interestTwoImage];
+    interestThreeImage = [self convertImageViewToCircle:interestThreeImage];
+    userNameLabel.text = @"Hulio Jaures";//[PFUser currentUser][@"name"];
+    attendedAmountLabel.text = [NSString stringWithFormat:@"%d", 24];
+    plannedAmountLabel.text = [NSString stringWithFormat:@"%d", 2];
+    friendsAmountLabel.text = [NSString stringWithFormat:@"%d", 250];
+}
+
+-(UIImageView*)convertImageViewToCircle:(UIImageView*) imageViewToCirculize {
+    imageViewToCirculize.layer.cornerRadius = imageViewToCirculize.frame.size.width / 2;
+    imageViewToCirculize.layer.masksToBounds = YES;
+    return imageViewToCirculize;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,8 +53,5 @@
 }
 */
 
-- (IBAction)logOutButton:(id)sender {
-    [PFUser logOutInBackground];
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 @end
