@@ -8,6 +8,7 @@
 
 #import "CreateEventViewController.h"
 #import <Parse/Parse.h>
+#import <CommonCrypto/CommonDigest.h>
 
 @interface CreateEventViewController () {
     NSDate *myDate;
@@ -43,36 +44,12 @@
     return dateString;
 }
 
-// Convert to JPEG with 50% quality
-/*
- NSData* data = UIImageJPEGRepresentation(imageView.image, 0.5f);
- PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:data];
- 
- // Save the image to Parse
- 
- [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
- if (!error) {
- // The image has now been uploaded to Parse. Associate it with a new object
- PFObject* newPhotoObject = [PFObject objectWithClassName:@"PhotoObject"];
- [newPhotoObject setObject:imageFile forKey:@"image"];
- 
- [newPhotoObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
- if (!error) {
- NSLog(@"Saved");
- }
- else{
- // Error
- NSLog(@"Error: %@ %@", error, [error userInfo]);
- }
- }];
- }
- }];*/
-
 - (IBAction)createEventPressed:(id)sender {
     PFObject *event = [PFObject objectWithClassName:@"Event"];
     event[@"date"] = myDate;
     event[@"name"] = nameLabel.text;
     event[@"location"] = locationLabel.text;
+    event[@"image"] = [self convertForUploadWithImage:chosenImage];
     [event saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             // The object has been saved.
@@ -83,6 +60,26 @@
             [self showAlert:@"Error saving event!" title:@"Oh noes!"];
         }
     }];
+}
+
+-(PFFile*)convertForUploadWithImage:(UIImage*)image {
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.8);
+    NSString *filename = [self convertIntoMD5:[NSString stringWithFormat:@"%@.jpg",nameLabel.text]];
+    PFFile *imageFile = [PFFile fileWithName:filename data:imageData];
+    return imageFile;
+}
+
+- (NSString *)convertIntoMD5:(NSString *) string{
+    const char *cStr = [string UTF8String];
+    unsigned char digest[16];
+    
+    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
+    
+    NSMutableString *resultString = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+        [resultString appendFormat:@"%02x", digest[i]];
+    return  resultString;
 }
 
 #pragma mark Photo Picker Delegate Methods

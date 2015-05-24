@@ -105,6 +105,7 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" id="UFy-Cl-OOX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="LZw-kc-C4j"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9sv-GK-RJ3">
                             <connections>
                                 <segue destination="6Pn-qD-W2R" kind="push" id="IaL-8s-VyF"/>
