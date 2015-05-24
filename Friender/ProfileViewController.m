@@ -21,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    PFUser* currentUser = [PFUser currentUser];
+    
     // Do any additional setup after loading the view.
     FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil];
     [request startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
@@ -30,6 +32,8 @@
             
             NSString *facebookID = userData[@"id"];
             NSString *name = userData[@"name"];
+            currentUser[@"FBName"] = name;
+            [currentUser saveInBackground];
             userNameLabel.text = name;
             NSString *location = userData[@"location"][@"name"];
             NSString *gender = userData[@"gender"];
@@ -48,8 +52,10 @@
              ^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                  if (connectionError == nil && data != nil) {
                      [profileImageView setImage:[UIImage imageWithData:data]];
-                     
-                     
+                     NSData *imageData = UIImagePNGRepresentation([UIImage imageWithData:data]);
+                     PFFile *file = [PFFile fileWithData:imageData];
+                     currentUser[@"ProfilePic"] = file;
+                     [currentUser saveInBackground];
                      // Set the image in the imageView
                      // ...
                  }
@@ -76,6 +82,7 @@
         friendsAmountLabel.text = @"0";
     }
     self.navigationController.title = userNameLabel.text;
+    
 }
 
 -(UIImageView*)convertImageViewToCircle:(UIImageView*) imageViewToCirculize {

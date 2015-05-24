@@ -32,6 +32,7 @@
 @synthesize peopleArray = _peopleArray;
 @synthesize position = _position;
 @synthesize userLocation = _userLocation;
+@synthesize OtherPic = _OtherPic;
 
 
 
@@ -41,29 +42,24 @@
     left = CGPointMake(-200,viewFrame.size.height/2);
     center = CGPointMake(viewFrame.size.width/2, viewFrame.size.height/2);
     right = CGPointMake(viewFrame.size.width+200, viewFrame.size.height/2);
+    PFUser *currentUser = [PFUser currentUser];
+    PFFile *file = currentUser[@"ProfilePic"];
     
+    // file has not been downloaded yet, we just have a handle on this file
+    
+    // Tell the PFImageView about your file
+    PFImageView* PFImage = [[PFImageView alloc] init];
+    PFImage.image = [UIImage imageNamed:@"mainPic.jpg"];
+    PFImage.file = file;
+    [PFImage loadInBackground];
+    self.OtherPic = PFImage.image;
     
     self.peopleArray = [[NSMutableArray alloc] init];
     [self initPeopleArray];
     _position = 1;
     self.view.backgroundColor = [UIColor colorWithRed:.183f green:.183f blue:.183f alpha:.9f];
     
-    int pos = (int)self.position;
-    UILabel* addLabel = [self.peopleArray objectAtIndex:pos+1];
-    CGRect placeFrame = CGRectMake(right.x, self.view.frame.size.height/2.0f, addLabel.frame.size.width, addLabel.frame.size.height);
-    [addLabel setFrame:placeFrame];
-    addLabel.center = center;
-    [self.view addSubview:addLabel];
-    UILabel* centerLabel = [self.peopleArray objectAtIndex:pos];
-    CGRect centerFrame = CGRectMake(center.x-25, self.view.frame.size.height/2.0f, centerLabel.frame.size.width, centerLabel.frame.size.height);
-    [centerLabel setFrame:centerFrame];
-    centerLabel.center = right;
-    [self.view addSubview:centerLabel];
-    UILabel* leftLabel = [self.peopleArray objectAtIndex:pos-1];
-    CGRect leftFrame = CGRectMake(left.x, self.view.frame.size.height/2.0f, leftLabel.frame.size.width, leftLabel.frame.size.height);
-    [leftLabel setFrame:leftFrame];
-    leftLabel.center = left;
-    [self.view addSubview:leftLabel];
+    
     
     
     
@@ -129,7 +125,7 @@
     if((int)self.position>0){
         int pos = (int)self.position;
         UILabel* centerLabel = [self.peopleArray objectAtIndex:pos];
-        CGRect rightFrame = CGRectMake(right.x, right.y, centerLabel.frame.size.width, centerLabel.frame.size.height);
+        
         [UIView animateWithDuration:.5 animations:^{centerLabel.center = right;}];
         if(pos!=self.peopleArray.count-1){
             UILabel* rightLabel = [self.peopleArray objectAtIndex:pos+1];
@@ -158,29 +154,7 @@
     
 }
 
--(void) queryNearbyUsers{
-    if(self.userLocation){
-         NSLog(@"%@",self.userLocation);
-        PFQuery *query = [PFQuery queryWithClassName:@"_User"];
-        [query whereKey:@"location" nearGeoPoint:self.userLocation];
-        query.limit = 20;
-        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-            if (!error) {
-                // The find succeeded.
-                NSLog(@"Successfully retrieved %lu scores.", (unsigned long)objects.count);
-                // Do something with the found objects
-                for (PFObject *object in objects) {
-                    NSLog(@"%@", object.objectId);
-                }
-            } else {
-                // Log details of the failure
-                NSLog(@"Error: %@ %@", error, [error userInfo]);
-            }
-        }];
-       
-    }
 
-}
 
 -(void) initPeopleArray{
     PFUser* currentUser = [PFUser currentUser];
@@ -194,7 +168,95 @@
             
             
             [currentUser saveInBackground];
-            [self queryNearbyUsers];
+            PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+            [query whereKey:@"location" nearGeoPoint:self.userLocation];
+            query.limit = 20;
+            [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+                if (!error) {
+                    // The find succeeded.
+                    NSLog(@"Successfully retrieved %lu scores.", (unsigned long)objects.count);
+                                              // Do something with the found objects
+                    for (PFObject *object in objects) {
+                        PFUser *user = (PFUser*)object;
+                        NSLog(@"%@ is at %@",[user objectForKey:@"FBName"],user[@"location"]);
+                        PFImageView* cardPic = [[PFImageView alloc] init];
+                        //cardPic.image = [UIImage imageNamed:@"mainPic.jpg"];
+                        cardPic.file = user[@"ProfilePic"];
+                        if(!cardPic)
+                            cardPic = currentUser[@"ProfilePic"];
+                        [cardPic loadInBackground];
+
+                        CGRect cardFrame = CGRectMake(90.0f, 150.0f, 300.0f, 466.0f);
+                        UIView *card = [[UIView alloc] initWithFrame:cardFrame];
+                        card.backgroundColor = [UIColor colorWithRed:.7255f green:.7255f blue:.7255f alpha:1.0f];
+                        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(cardTapped:)];
+                        tap.numberOfTapsRequired = 1;
+                        [card addGestureRecognizer:tap];
+                        card.layer.borderColor = [UIColor grayColor].CGColor;
+                        card.layer.borderWidth = 2.0f;
+                        //UIImageView *cardPic = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainPic.jpg"]];
+                        [card addSubview:cardPic];
+                        CGRect cardPicFrame = CGRectMake(0, 0, cardPic.superview.frame.size.width, .45f*cardPic.superview.frame.size.height);
+                        float cardWidth =  cardPic.superview.frame.size.width;
+                        float cardHeight = cardPic.superview.frame.size.height;
+                        [cardPic setFrame:cardPicFrame];
+                        UILabel* info = [[UILabel alloc] init];
+                        [card addSubview:info];
+                        info.font = [UIFont systemFontOfSize:24];
+                        info.textColor = [UIColor whiteColor];
+                        info.text = [user objectForKey:@"FBName"];
+                        CGRect nameFrame = CGRectMake(.03f*cardWidth, .35f*cardHeight, cardWidth, .3f*cardHeight);
+                        [info setFrame:nameFrame];
+                        UILabel* cityInfo = [[UILabel alloc] init];
+                        [card addSubview:cityInfo];
+                        cityInfo.font = [UIFont systemFontOfSize:24];
+                        cityInfo.textColor = [UIColor whiteColor];
+                        cityInfo.text = @"Dublin, CA";
+                        CGRect cityFrame = CGRectMake(.03*cardWidth, .40f*cardHeight, cardWidth, .3f*cardHeight);
+                        [cityInfo setFrame:cityFrame];
+                        for(int i = 0; i < 3; i++){
+                            UIImageView *interest = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"yajun.png"]];
+                            CGRect interestFrame = CGRectMake(.1*cardWidth + i*95, .6*cardHeight, .17*cardWidth, .2*cardHeight);
+                            [interest setFrame:interestFrame];
+                            [card addSubview:interest];
+                            CGRect interestNameRect = CGRectMake(.1*cardWidth+i*95, .8*cardHeight, .2*cardWidth, .1*cardHeight);
+                            UILabel *interestName = [[UILabel alloc] initWithFrame:interestNameRect];
+                            interestName.numberOfLines = 2;
+                            interestName.textColor = [UIColor whiteColor];
+                            interestName.text = [NSString stringWithFormat:@"Interest%d",i];
+                            [card addSubview:interestName];
+                            
+                        }
+                        [self.peopleArray addObject:card];
+                                                //self.OtherPic = (UIImage*)[user objectForKey:@"ProfilePic"];*/
+                
+                    }
+                    int pos = (int)self.position;
+                    UILabel* addLabel = [self.peopleArray objectAtIndex:pos+1];
+                    CGRect placeFrame = CGRectMake(right.x, self.view.frame.size.height/2.0f, addLabel.frame.size.width, addLabel.frame.size.height);
+                    [addLabel setFrame:placeFrame];
+                    addLabel.center = center;
+                    [self.view addSubview:addLabel];
+                    UILabel* centerLabel = [self.peopleArray objectAtIndex:pos];
+                    CGRect centerFrame = CGRectMake(center.x-25, self.view.frame.size.height/2.0f, centerLabel.frame.size.width, centerLabel.frame.size.height);
+                    [centerLabel setFrame:centerFrame];
+                    centerLabel.center = right;
+                    [self.view addSubview:centerLabel];
+                    UILabel* leftLabel = [self.peopleArray objectAtIndex:pos-1];
+                    CGRect leftFrame = CGRectMake(left.x, self.view.frame.size.height/2.0f, leftLabel.frame.size.width, leftLabel.frame.size.height);
+                    [leftLabel setFrame:leftFrame];
+                    leftLabel.center = left;
+                    [self.view addSubview:leftLabel];
+                    
+
+                   
+                } else {
+                    // Log details of the failure
+                    NSLog(@"Error: %@ %@", error, [error userInfo]);
+                   
+                }
+            }];
+
             // do something with the new geoPoint
         }
         else{
@@ -203,6 +265,11 @@
         
     
     }];
+    if(currentUser[@"ProfilePic"])
+        NSLog(@"Has pic");
+    
+    
+
     
     //NSLog(@"%@",currentUser.username);
     // Create a query for places
@@ -215,51 +282,7 @@
   /*  if([query findObjects]){
             }*/
     
-    for(int i = 0; i < 5; i++){
-        
-        CGRect cardFrame = CGRectMake(90.0f, 150.0f, 300.0f, 466.0f);
-        UIView *card = [[UIView alloc] initWithFrame:cardFrame];
-        card.backgroundColor = [UIColor colorWithRed:.7255f green:.7255f blue:.7255f alpha:1.0f];
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(cardTapped:)];
-        tap.numberOfTapsRequired = 1;
-        [card addGestureRecognizer:tap];
-        card.layer.borderColor = [UIColor grayColor].CGColor;
-        card.layer.borderWidth = 2.0f;
-        UIImageView *cardPic = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainPic.jpg"]];
-        [card addSubview:cardPic];
-        CGRect cardPicFrame = CGRectMake(0, 0, cardPic.superview.frame.size.width, .45f*cardPic.superview.frame.size.height);
-        float cardWidth =  cardPic.superview.frame.size.width;
-        float cardHeight = cardPic.superview.frame.size.height;
-        [cardPic setFrame:cardPicFrame];
-        UILabel* info = [[UILabel alloc] init];
-        [card addSubview:info];
-        info.font = [UIFont systemFontOfSize:24];
-        info.textColor = [UIColor whiteColor];
-        info.text = @"Abhishyant Khare, 17";
-        CGRect nameFrame = CGRectMake(.03f*cardWidth, .35f*cardHeight, cardWidth, .3f*cardHeight);
-        [info setFrame:nameFrame];
-        UILabel* cityInfo = [[UILabel alloc] init];
-        [card addSubview:cityInfo];
-        cityInfo.font = [UIFont systemFontOfSize:24];
-        cityInfo.textColor = [UIColor whiteColor];
-        cityInfo.text = @"Dublin, CA";
-        CGRect cityFrame = CGRectMake(.03*cardWidth, .40f*cardHeight, cardWidth, .3f*cardHeight);
-        [cityInfo setFrame:cityFrame];
-        for(int i = 0; i < 3; i++){
-            UIImageView *interest = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"yajun.png"]];
-            CGRect interestFrame = CGRectMake(.1*cardWidth + i*95, .6*cardHeight, .17*cardWidth, .2*cardHeight);
-            [interest setFrame:interestFrame];
-            [card addSubview:interest];
-            CGRect interestNameRect = CGRectMake(.1*cardWidth+i*95, .8*cardHeight, .2*cardWidth, .1*cardHeight);
-            UILabel *interestName = [[UILabel alloc] initWithFrame:interestNameRect];
-            interestName.numberOfLines = 2;
-            interestName.textColor = [UIColor whiteColor];
-            interestName.text = [NSString stringWithFormat:@"Interest%d",i];
-            [card addSubview:interestName];
-            
-        }
-        [self.peopleArray addObject:card];
-    }
+   
 }
 
 -(void)cardTapped:(UITapGestureRecognizer *) recognizer{

@@ -46,6 +46,7 @@
 		7E0D52141B1117A500B1B7CE /* group_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52131B1117A500B1B7CE /* group_icon@2x.png */; };
 		7E0D52161B111B0F00B1B7CE /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52151B111B0F00B1B7CE /* person@2x.png */; };
 		7E0D52181B111C1D00B1B7CE /* events_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */; };
+		7E8D5CA51B11DE6C00F06D95 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8D5CA41B11DE6C00F06D95 /* ParseUI.framework */; };
 		7EC3B9B01B11815000052147 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3B9AF1B11815000052147 /* FriendViewController.m */; };
 		7EC3B9B21B11903400052147 /* yajun.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3B9B11B11903400052147 /* yajun.png */; };
 		7EC3B9B41B11944200052147 /* mainPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3B9B31B11944200052147 /* mainPic.jpg */; };
@@ -119,6 +120,7 @@
 		7E0D52131B1117A500B1B7CE /* group_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group_icon@2x.png"; path = "../Friender/group_icon@2x.png"; sourceTree = "<group>"; };
 		7E0D52151B111B0F00B1B7CE /* person@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "person@2x.png"; path = "../Friender/person@2x.png"; sourceTree = "<group>"; };
 		7E0D52171B111C1D00B1B7CE /* events_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "events_icon@2x.png"; path = "../Friender/events_icon@2x.png"; sourceTree = "<group>"; };
+		7E8D5CA41B11DE6C00F06D95 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		7EC3B9AE1B11815000052147 /* FriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
 		7EC3B9AF1B11815000052147 /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
 		7EC3B9B11B11903400052147 /* yajun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yajun.png; path = ../Friender/yajun.png; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				49BF5C5A1B1108CB006454CD /* SystemConfiguration.framework in Frameworks */,
 				49BF5C581B1108C6006454CD /* StoreKit.framework in Frameworks */,
 				49BF5C691B110B9A006454CD /* ParseCrashReporting.framework in Frameworks */,
+				7E8D5CA51B11DE6C00F06D95 /* ParseUI.framework in Frameworks */,
 				D2D7DFEA1B116C88001E25EC /* FBSDKCoreKit.framework in Frameworks */,
 				49BF5C561B1108C1006454CD /* Security.framework in Frameworks */,
 				49BF5C681B110B9A006454CD /* Parse.framework in Frameworks */,
@@ -250,6 +253,7 @@
 		49BF5C481B110841006454CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E8D5CA41B11DE6C00F06D95 /* ParseUI.framework */,
 				D2D7DFE81B116C88001E25EC /* FBSDKCoreKit.framework */,
 				D2D7DFE91B116C88001E25EC /* FBSDKLoginKit.framework */,
 				49BF5C821B115F16006454CD /* ParseFacebookUtils.framework */,
