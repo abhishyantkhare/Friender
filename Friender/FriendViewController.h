@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 
 @interface FriendViewController : UIViewController
@@ -14,6 +15,7 @@
 @property(nonatomic, strong) UIImageView *imageView;
 @property(nonatomic, strong) NSMutableArray *peopleArray;
 @property(nonatomic) NSInteger position;
+@property (nonatomic, strong) PFGeoPoint *userLocation;
 
 
 @end

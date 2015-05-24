@@ -53,6 +53,8 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

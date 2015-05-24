@@ -31,6 +31,7 @@
 @synthesize imageView = _imageView;
 @synthesize peopleArray = _peopleArray;
 @synthesize position = _position;
+@synthesize userLocation = _userLocation;
 
 
 
@@ -157,8 +158,62 @@
     
 }
 
+-(void) queryNearbyUsers{
+    if(self.userLocation){
+         NSLog(@"%@",self.userLocation);
+        PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+        [query whereKey:@"location" nearGeoPoint:self.userLocation];
+        query.limit = 20;
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+            if (!error) {
+                // The find succeeded.
+                NSLog(@"Successfully retrieved %lu scores.", (unsigned long)objects.count);
+                // Do something with the found objects
+                for (PFObject *object in objects) {
+                    NSLog(@"%@", object.objectId);
+                }
+            } else {
+                // Log details of the failure
+                NSLog(@"Error: %@ %@", error, [error userInfo]);
+            }
+        }];
+       
+    }
+
+}
+
 -(void) initPeopleArray{
+    PFUser* currentUser = [PFUser currentUser];
     
+    NSLog(@"is Called");
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
+        if (!error) {
+            self.userLocation = geoPoint;
+                currentUser[@"location"]=self.userLocation;
+            
+            
+            
+            [currentUser saveInBackground];
+            [self queryNearbyUsers];
+            // do something with the new geoPoint
+        }
+        else{
+            NSLog(@"%@",error);
+        }
+        
+    
+    }];
+    
+    //NSLog(@"%@",currentUser.username);
+    // Create a query for places
+    
+    // Interested in locations near user.
+   
+    // Limit what could be a lot of points.
+    
+    // Final list of objects
+  /*  if([query findObjects]){
+            }*/
     
     for(int i = 0; i < 5; i++){
         
