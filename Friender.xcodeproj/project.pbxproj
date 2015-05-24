@@ -288,6 +288,10 @@
 		D252A3691B1124AE001E1036 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				49BF5C991B119DBD006454CD /* Interests Images */,
+				49BF5C8E1B118FCE006454CD /* temp_profile.jpg */,
+				49BF5C8C1B118667006454CD /* exit_icon@2x.png */,
+				49BF5C871B118503006454CD /* settings_icon@2x.png */,
 				7EC3B9B31B11944200052147 /* mainPic.jpg */,
 				7EC3B9B11B11903400052147 /* yajun.png */,
 				D2D7DFE61B116B9C001E25EC /* frienderLogo.png */,
@@ -384,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BF5C981B119DBA006454CD /* dogecoin.png in Resources */,
 				7EC3B9B41B11944200052147 /* mainPic.jpg in Resources */,
 				49BF5C2A1B10FFE9006454CD /* Main.storyboard in Resources */,
 				49BF5C2F1B10FFE9006454CD /* LaunchScreen.xib in Resources */,

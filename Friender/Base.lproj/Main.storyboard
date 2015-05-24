@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hgO-mG-sGF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="hgO-mG-sGF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Find Friends-->
+        <!--Friend View Controller-->
         <scene sceneID="end-v4-eKP">
             <objects>
                 <viewController id="iO9-4n-SOi" customClass="FriendViewController" sceneMemberID="viewController">
@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" titlChanged Storyboare="Find Friends" image="group_icon.png" selectedImage="group_icon.png" id="bzz-Cc-Lqb">
+                    <tabBarItem key="tabBarItem" image="group_icon.png" selectedImage="group_icon.png" id="bzz-Cc-Lqb">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="group_icon.png"/>
                         </userDefinedRuntimeAttributes>
@@ -214,7 +214,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" horizontalHuggingPriority="750" reuseIdentifier="Cell" id="sA9-Su-1AS" customClass="CollectionViewCell">
-                                <rect key="frame" x="0.0" y="64" width="148" height="112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="148" height="112"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="148" height="112"/>
