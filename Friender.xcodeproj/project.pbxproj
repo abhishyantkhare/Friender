@@ -42,6 +42,7 @@
 		7EC3B9B01B11815000052147 /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3B9AF1B11815000052147 /* FriendViewController.m */; };
 		7EC3B9B21B11903400052147 /* yajun.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3B9B11B11903400052147 /* yajun.png */; };
 		7EC3B9B41B11944200052147 /* mainPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3B9B31B11944200052147 /* mainPic.jpg */; };
+		7EC3B9B71B119C8A00052147 /* FriendProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3B9B61B119C8A00052147 /* FriendProfileController.m */; };
 		7ED2C4FB1B1122D700EE4952 /* profile_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */; };
 		D252A36B1B1124C5001E1036 /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = D252A36A1B1124C5001E1036 /* event.png */; };
 		D28C2AA61B113D7C00B34839 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28C2AA51B113D7C00B34839 /* FBSDKCoreKit.framework */; };
@@ -108,6 +109,8 @@
 		7EC3B9AF1B11815000052147 /* FriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
 		7EC3B9B11B11903400052147 /* yajun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yajun.png; path = ../Friender/yajun.png; sourceTree = "<group>"; };
 		7EC3B9B31B11944200052147 /* mainPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mainPic.jpg; sourceTree = "<group>"; };
+		7EC3B9B51B119C8A00052147 /* FriendProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendProfileController.h; sourceTree = "<group>"; };
+		7EC3B9B61B119C8A00052147 /* FriendProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendProfileController.m; sourceTree = "<group>"; };
 		7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile_icon@2x.png"; path = "../Friender/profile_icon@2x.png"; sourceTree = "<group>"; };
 		D252A36A1B1124C5001E1036 /* event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event.png; sourceTree = "<group>"; };
 		D28C2AA51B113D7C00B34839 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 			children = (
 				7EC3B9AE1B11815000052147 /* FriendViewController.h */,
 				7EC3B9AF1B11815000052147 /* FriendViewController.m */,
+				7EC3B9B51B119C8A00052147 /* FriendProfileController.h */,
+				7EC3B9B61B119C8A00052147 /* FriendProfileController.m */,
 				7E0D52101B11169B00B1B7CE /* TabBarController.h */,
 				7E0D52111B11169B00B1B7CE /* TabBarController.m */,
 				49BF5C1F1B10FFE9006454CD /* AppDelegate.h */,
@@ -396,6 +401,7 @@
 				49BF5C771B1146BE006454CD /* FBMissingSymbols.m in Sources */,
 				49BF5C1E1B10FFE9006454CD /* main.m in Sources */,
 				49BF5C711B1120E4006454CD /* FBLoginViewController.m in Sources */,
+				7EC3B9B71B119C8A00052147 /* FriendProfileController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
