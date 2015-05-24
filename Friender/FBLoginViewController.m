@@ -47,6 +47,7 @@
             NSLog(@"Uh oh. The user cancelled the Facebook login.");
         } else {
             NSLog(@"User now has publish permissions!");
+            [self performSegueWithIdentifier:@"loginSegue" sender:self];
         }
     }];
 }
