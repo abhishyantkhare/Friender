@@ -35,6 +35,7 @@
 		49BF5C7D1B115337006454CD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C7C1B115337006454CD /* Bolts.framework */; };
 		49BF5C7F1B1154FA006454CD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C7E1B1154FA006454CD /* Social.framework */; };
 		49BF5C811B11553F006454CD /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BF5C801B11553F006454CD /* libstdc++.6.dylib */; };
+		49BF5C861B116F7F006454CD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BF5C851B116F7F006454CD /* ProfileViewController.m */; };
 		7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D52111B11169B00B1B7CE /* TabBarController.m */; };
 		7E0D52141B1117A500B1B7CE /* group_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52131B1117A500B1B7CE /* group_icon@2x.png */; };
 		7E0D52161B111B0F00B1B7CE /* person@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D52151B111B0F00B1B7CE /* person@2x.png */; };
@@ -42,7 +43,6 @@
 		7ED2C4FB1B1122D700EE4952 /* profile_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */; };
 		D252A36B1B1124C5001E1036 /* event.png in Resources */ = {isa = PBXBuildFile; fileRef = D252A36A1B1124C5001E1036 /* event.png */; };
 		D28C2AA61B113D7C00B34839 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28C2AA51B113D7C00B34839 /* FBSDKCoreKit.framework */; };
-		D28C2AA81B113D9100B34839 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28C2AA71B113D9100B34839 /* FBSDKLoginKit.framework */; };
 		D2A72DF91B1118EB00BCAC57 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */; };
 		D2A72DFC1B11190F00BCAC57 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A72DFB1B11190F00BCAC57 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
@@ -93,6 +93,8 @@
 		49BF5C7E1B1154FA006454CD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		49BF5C801B11553F006454CD /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		49BF5C821B115F16006454CD /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		49BF5C841B116F7F006454CD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		49BF5C851B116F7F006454CD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		7E0D52101B11169B00B1B7CE /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = ../TabBarController.h; sourceTree = "<group>"; };
 		7E0D52111B11169B00B1B7CE /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = ../TabBarController.m; sourceTree = "<group>"; };
 		7E0D52131B1117A500B1B7CE /* group_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "group_icon@2x.png"; path = "../Friender/group_icon@2x.png"; sourceTree = "<group>"; };
@@ -102,7 +104,6 @@
 		7ED2C4FA1B1122D700EE4952 /* profile_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile_icon@2x.png"; path = "../Friender/profile_icon@2x.png"; sourceTree = "<group>"; };
 		D252A36A1B1124C5001E1036 /* event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = event.png; sourceTree = "<group>"; };
 		D28C2AA51B113D7C00B34839 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		D28C2AA71B113D9100B34839 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		D2A72DF71B1118EB00BCAC57 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		D2A72DFA1B11190F00BCAC57 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -168,8 +169,6 @@
 		49BF5C1A1B10FFE9006454CD /* Friender */ = {
 			isa = PBXGroup;
 			children = (
-				49BF5C1F1B10FFE9006454CD /* AppDelegate.h */,
-				49BF5C201B10FFE9006454CD /* AppDelegate.m */,
 				7E0D52101B11169B00B1B7CE /* TabBarController.h */,
 				7E0D52111B11169B00B1B7CE /* TabBarController.m */,
 				49BF5C1F1B10FFE9006454CD /* AppDelegate.h */,
@@ -177,6 +176,8 @@
 				49BF5C6F1B1120E4006454CD /* FBLoginViewController.h */,
 				49BF5C701B1120E4006454CD /* FBLoginViewController.m */,
 				49BF5C281B10FFE9006454CD /* Main.storyboard */,
+				49BF5C841B116F7F006454CD /* ProfileViewController.h */,
+				49BF5C851B116F7F006454CD /* ProfileViewController.m */,
 				D2A72DF71B1118EB00BCAC57 /* CollectionViewController.h */,
 				D2A72DF81B1118EB00BCAC57 /* CollectionViewController.m */,
 				D2A72DFA1B11190F00BCAC57 /* CollectionViewCell.h */,
@@ -369,6 +370,7 @@
 			files = (
 				D2A72DFC1B11190F00BCAC57 /* CollectionViewCell.m in Sources */,
 				49BF5C211B10FFE9006454CD /* AppDelegate.m in Sources */,
+				49BF5C861B116F7F006454CD /* ProfileViewController.m in Sources */,
 				7E0D52121B11169B00B1B7CE /* TabBarController.m in Sources */,
 				D2A72DF91B1118EB00BCAC57 /* CollectionViewController.m in Sources */,
 				49BF5C771B1146BE006454CD /* FBMissingSymbols.m in Sources */,

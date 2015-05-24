@@ -21,8 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Check if user is logged in
+    
     if ([PFUser currentUser]) {
         [self segueToMainContent];
+    } else {
+        self.navigationController.navigationBar.hidden = YES;
     }
 }
 
@@ -48,7 +51,7 @@
 
 - (IBAction)loginWithFacebookButton:(id)sender {
     
-    NSArray *publishPermissions = @[@"publish"];
+    NSArray *publishPermissions = @[];
     NSArray *readPermissions = @[@"public_profile"];
     
     [PFFacebookUtils logInInBackgroundWithPublishPermissions:publishPermissions block:^(PFUser *user, NSError *error) {

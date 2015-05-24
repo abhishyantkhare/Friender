@@ -1,5 +1,5 @@
 //
-//  FBLoginViewController.h
+//  ProfileViewController.h
 //  Friender
 //
 //  Created by Andrew Morgan on 5/23/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FBLoginViewController : UIViewController
-
-- (IBAction)loginWithFacebookButton:(id)sender;
+@interface ProfileViewController : UIViewController
 
 @end
