@@ -10,7 +10,7 @@
 #import "CollectionViewCell.h"
 
 @interface CollectionViewController (){
- NSArray *eventPhotos;
+ NSArray *eventArray;
 }
 
 
@@ -20,24 +20,31 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     // Initialize recipe image array
-    eventPhotos = [NSArray arrayWithObjects:@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",
-                   nil];
+    eventArray = [NSArray arrayWithObjects:@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",@"event.png",nil];
 }
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-  //  [self.collectionView registerClass:[UICollectionViewCell class] //forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 
+/*-(void)reloadEvents {
+    PFQuery *query = [PFQuery queryWithClassName:@"Events"];
+    [query whereKey:@"playerName" equalTo:@"Dan Stemkoski"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            // Do something with the found objects
+            for (PFObject *object in objects) {
+                NSLog(@"%@", object.objectId);
+            }
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+
+}*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -64,7 +71,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 //#warning Incomplete method implementation -- Return the number of items in the section
     //return 50;
-     return [eventPhotos count];
+     return [eventArray count];
 }
 
 
@@ -73,7 +80,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
-    cell.backgroundImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", [eventPhotos objectAtIndex:indexPath.row]]];
+    cell.backgroundImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", [eventArray objectAtIndex:indexPath.row]]];
     
     return cell;
 }
@@ -92,7 +99,7 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDelegate>
 //Tapped cell
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"Tapped %ld cell! It had %@ image!", (long)indexPath.row, [eventPhotos objectAtIndex:indexPath.row]);
+    NSLog(@"Tapped %ld cell! It had %@ image!", (long)indexPath.row, [eventArray objectAtIndex:indexPath.row]);
     [self performSegueWithIdentifier:@"expandEvent" sender:self];
 }
 //Deselected cell (lifted finger)
@@ -138,4 +145,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
+- (IBAction)reloadButtonPressed:(id)sender {
+}
 @end
