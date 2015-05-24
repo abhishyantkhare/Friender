@@ -40,6 +40,7 @@
     center = CGPointMake(viewFrame.size.width/2, viewFrame.size.height/2);
     right = CGPointMake(viewFrame.size.width+200, viewFrame.size.height/2);
     
+    
     self.peopleArray = [[NSMutableArray alloc] init];
     [self initPeopleArray];
     _position = 1;
@@ -90,9 +91,9 @@
 -(void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch* touch = [touches anyObject];
     endPoint = [touch locationInView:self.view];
-    if(endPoint.x<beginPoint.x)
+    if(endPoint.x<beginPoint.x-10)
         [self updatePersonLeft];
-    else if (endPoint.x>beginPoint.x)
+    else if (endPoint.x>beginPoint.x+10)
         [self updatePersonRight];
 }
 -(void) updatePersonLeft{
@@ -159,9 +160,13 @@
     
    
     for(int i = 0; i < 5; i++){
+        
         CGRect cardFrame = CGRectMake(90.0f, 150.0f, 300.0f, 466.0f);
         UIView *card = [[UIView alloc] initWithFrame:cardFrame];
         card.backgroundColor = [UIColor colorWithRed:.7255f green:.7255f blue:.7255f alpha:1.0f];
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(cardTapped:)];
+        tap.numberOfTapsRequired = 1;
+        [card addGestureRecognizer:tap];
         card.layer.borderColor = [UIColor grayColor].CGColor;
         card.layer.borderWidth = 2.0f;
         UIImageView *cardPic = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainPic.jpg"]];
@@ -198,6 +203,17 @@
             
         }
         [self.peopleArray addObject:card];
+    }
+}
+
+-(void)cardTapped:(UITapGestureRecognizer *) recognizer{
+    [self performSegueWithIdentifier:@"bigProfile" sender:self.view];
+}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"bigProfile"]) {
+      
+        UIViewController *destViewController = segue.destinationViewController;
+        
     }
 }
 
