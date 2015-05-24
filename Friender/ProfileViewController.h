@@ -19,5 +19,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView *interestOneImage;
 @property (strong, nonatomic) IBOutlet UIImageView *interestTwoImage;
 @property (strong, nonatomic) IBOutlet UIImageView *interestThreeImage;
+@property (strong, nonatomic) IBOutlet UILabel *InterestOneLabel;
+@property (strong, nonatomic) IBOutlet UILabel *InterestTwoLabel;
+@property (strong, nonatomic) IBOutlet UILabel *InterestThreeLabel;
 
 @end

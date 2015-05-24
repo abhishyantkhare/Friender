@@ -7,6 +7,7 @@
 //
 
 #import "FriendViewController.h"
+#import "ProfileViewController.h"
 
 
 @interface FriendViewController () {
@@ -45,7 +46,7 @@
     [self initPeopleArray];
     _position = 1;
     self.view.backgroundColor = [UIColor colorWithRed:.183f green:.183f blue:.183f alpha:.9f];
-
+    
     int pos = (int)self.position;
     UILabel* addLabel = [self.peopleArray objectAtIndex:pos+1];
     CGRect placeFrame = CGRectMake(right.x, self.view.frame.size.height/2.0f, addLabel.frame.size.width, addLabel.frame.size.height);
@@ -102,19 +103,19 @@
         UILabel* centerLabel = [self.peopleArray objectAtIndex:pos];
         CGRect leftFrame = CGRectMake(left.x, left.y, centerLabel.frame.size.width, centerLabel.frame.size.height);
         [UIView animateWithDuration:.5 animations:^{centerLabel.center = left;}];
-       UILabel* rightLabel = [self.peopleArray objectAtIndex:pos+1];
+        UILabel* rightLabel = [self.peopleArray objectAtIndex:pos+1];
         CGRect centerFrame = CGRectMake(center.x-25, center.y, rightLabel.frame.size.width, rightLabel.frame.size.height);
         [UIView animateWithDuration:.5 animations:^{rightLabel.center=center;}];
         if(!(int)self.position==0){
-        UILabel* leftLabel = [self.peopleArray objectAtIndex:pos-1];
+            UILabel* leftLabel = [self.peopleArray objectAtIndex:pos-1];
             [leftLabel removeFromSuperview];}
         if(pos <self.peopleArray.count-2){
-        UILabel* addLabel = [self.peopleArray objectAtIndex:pos+2];
-        CGRect placeFrame = CGRectMake(right.x, self.view.frame.size.height/2.0f, addLabel.frame.size.width, addLabel.frame.size.height);
-        
-        [addLabel setFrame:placeFrame];
+            UILabel* addLabel = [self.peopleArray objectAtIndex:pos+2];
+            CGRect placeFrame = CGRectMake(right.x, self.view.frame.size.height/2.0f, addLabel.frame.size.width, addLabel.frame.size.height);
+            
+            [addLabel setFrame:placeFrame];
             addLabel.center = right;
-        [self.view addSubview:addLabel];
+            [self.view addSubview:addLabel];
             
         }
         
@@ -130,8 +131,8 @@
         CGRect rightFrame = CGRectMake(right.x, right.y, centerLabel.frame.size.width, centerLabel.frame.size.height);
         [UIView animateWithDuration:.5 animations:^{centerLabel.center = right;}];
         if(pos!=self.peopleArray.count-1){
-        UILabel* rightLabel = [self.peopleArray objectAtIndex:pos+1];
-        [rightLabel removeFromSuperview];
+            UILabel* rightLabel = [self.peopleArray objectAtIndex:pos+1];
+            [rightLabel removeFromSuperview];
         }
         UILabel* leftLabel = [self.peopleArray objectAtIndex:pos-1];
         CGRect centerFrame = CGRectMake(center.x-25, center.y, leftLabel.frame.size.width, leftLabel.frame.size.height);
@@ -139,18 +140,18 @@
         
         if((int)self.position>1){
             UILabel* addLabel = [self.peopleArray objectAtIndex:pos-2];
-        CGRect placeFrame = CGRectMake(left.x, self.view.frame.size.height/2.0f, addLabel.frame.size.width, addLabel.frame.size.height);
-        [addLabel setFrame:placeFrame];
+            CGRect placeFrame = CGRectMake(left.x, self.view.frame.size.height/2.0f, addLabel.frame.size.width, addLabel.frame.size.height);
+            [addLabel setFrame:placeFrame];
             addLabel.center = left;
-        [self.view addSubview:addLabel];
+            [self.view addSubview:addLabel];
             
-           
+            
         }
         pos--;
         
         self.position = (NSInteger) pos;
         NSLog(@"%d",(int) self.position);
-      
+        
         
     }
     
@@ -158,7 +159,7 @@
 
 -(void) initPeopleArray{
     
-   
+    
     for(int i = 0; i < 5; i++){
         
         CGRect cardFrame = CGRectMake(90.0f, 150.0f, 300.0f, 466.0f);
@@ -209,11 +210,19 @@
 -(void)cardTapped:(UITapGestureRecognizer *) recognizer{
     [self performSegueWithIdentifier:@"bigProfile" sender:self.view];
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"bigProfile"]) {
-      
-        UIViewController *destViewController = segue.destinationViewController;
         
+        ProfileViewController *destViewController = segue.destinationViewController;
+        //destViewController.profileImageView.image
+        destViewController.userNameLabel.text = @"Your Friend";
+        destViewController.attendedAmountLabel.text = @"16";
+        destViewController.plannedAmountLabel.text = @"7";
+        destViewController.friendsAmountLabel.text = @"29";
+        destViewController.InterestOneLabel.text = @"Int 1";
+        destViewController.InterestTwoLabel.text = @"Int 2";
+        destViewController.InterestThreeLabel.text = @"Int 3";
     }
 }
 
@@ -231,13 +240,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

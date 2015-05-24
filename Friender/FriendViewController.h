@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FriendProfileController.h"
 
 
 @interface FriendViewController : UIViewController

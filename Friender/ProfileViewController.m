@@ -26,10 +26,17 @@
     interestOneImage = [self convertImageViewToCircle:interestOneImage];
     interestTwoImage = [self convertImageViewToCircle:interestTwoImage];
     interestThreeImage = [self convertImageViewToCircle:interestThreeImage];
-    userNameLabel.text = @"Hulio Jaures";//[PFUser currentUser][@"name"];
-    attendedAmountLabel.text = [NSString stringWithFormat:@"%d", 24];
-    plannedAmountLabel.text = [NSString stringWithFormat:@"%d", 2];
-    friendsAmountLabel.text = [NSString stringWithFormat:@"%d", 250];
+    
+    if ([attendedAmountLabel.text isEqualToString:@"##"]) {
+        attendedAmountLabel.text = @"0";
+    }
+    if ([plannedAmountLabel.text isEqualToString:@"##"]) {
+        plannedAmountLabel.text = @"0";
+    }
+    if ([friendsAmountLabel.text isEqualToString:@"##"]) {
+        friendsAmountLabel.text = @"0";
+    }
+    self.navigationController.title = userNameLabel.text;
 }
 
 -(UIImageView*)convertImageViewToCircle:(UIImageView*) imageViewToCirculize {
