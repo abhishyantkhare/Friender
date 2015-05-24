@@ -8,8 +8,9 @@
 
 #import "FBLoginViewController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+//#import <ParseFacebookUtils/PFFacebookUtils.h>
 
 @interface FBLoginViewController ()
 
@@ -19,17 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Set up Facebook login button
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    loginButton.center = self.view.center;
-    loginButton.frame = CGRectOffset(loginButton.frame, 0, 50);
-    [self.view addSubview:loginButton];
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    if ([FBSDKAccessToken currentAccessToken]) {
-        [self performSegueWithIdentifier:@"loginSegue" sender:self];
+    // Check if user is logged in
+    if ([PFUser currentUser]) {
+        [self segueToMainContent];
     }
 }
 
@@ -49,4 +42,39 @@
 }
 */
 
+-(void)segueToMainContent {
+    [self performSegueWithIdentifier:@"loginSegue" sender:self];
+}
+
+- (IBAction)loginWithFacebookButton:(id)sender {
+    
+    NSArray *publishPermissions = @[@"publish"];
+    NSArray *readPermissions = @[@"public_profile"];
+    
+    [PFFacebookUtils logInInBackgroundWithPublishPermissions:publishPermissions block:^(PFUser *user, NSError *error) {
+        if (!user) {
+            NSLog(@"Uh oh. The user cancelled the Facebook login.");
+            [self showAlert:@"You cancelled the Facebook login!" title:@"Oh noes!"];
+        } else if (user.isNew) {
+            NSLog(@"User signed up and logged in through Facebook!");
+            [self segueToMainContent];
+        } else {
+            NSLog(@"User logged in through Facebook!");
+            [self segueToMainContent];
+        }
+    }];
+    
+    [PFFacebookUtils linkUserInBackground:[PFUser currentUser] withReadPermissions:readPermissions block:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"User now has read and publish permissions!");
+            [self segueToMainContent];
+        }
+    }];
+}
+
+- (void)showAlert:(NSString *)message title:(NSString *)title {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    alert.alertViewStyle = UIAlertViewStyleDefault;
+    [alert show];
+}
 @end

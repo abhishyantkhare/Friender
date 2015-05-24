@@ -73,7 +73,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     
-    cell.backgroundImageView.image = [UIImage imageNamed:[eventPhotos objectAtIndex:indexPath.row]];
+    cell.backgroundImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", [eventPhotos objectAtIndex:indexPath.row]]];
     
     return cell;
 }
@@ -97,7 +97,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 //Deselected cell (lifted finger)
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
 
 }
 //Unhiglted item (released)
