@@ -10,5 +10,10 @@
 
 @interface ProfileViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *profileImageView;
+@property (strong, nonatomic) IBOutlet UILabel *userNameLabel;
+
+@property (strong, nonatomic) IBOutlet UILabel *attendedAmountLabel;
+@property (strong, nonatomic) IBOutlet UILabel *plannedAmountLabel;
+@property (strong, nonatomic) IBOutlet UILabel *friendsAmountLabel;
 
 @end

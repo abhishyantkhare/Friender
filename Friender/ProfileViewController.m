@@ -17,12 +17,16 @@
 @end
 
 @implementation ProfileViewController
-@synthesize profileImageView;
+@synthesize profileImageView, userNameLabel, attendedAmountLabel, plannedAmountLabel, friendsAmountLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     profileImageView = [self convertImageViewToCircle:profileImageView];
+    userNameLabel.text = @"Hulio Jaures";//[PFUser currentUser][@"name"];
+    attendedAmountLabel.text = [NSString stringWithFormat:@"%d", 24];
+    plannedAmountLabel.text = [NSString stringWithFormat:@"%d", 2];
+    friendsAmountLabel.text = [NSString stringWithFormat:@"%d", 250];
 }
 
 -(UIImageView*)convertImageViewToCircle:(UIImageView*) imageViewToCirculize {
