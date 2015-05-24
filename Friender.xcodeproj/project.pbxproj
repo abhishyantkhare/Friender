@@ -57,6 +57,7 @@
 		D2D7DFE71B116B9C001E25EC /* frienderLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D7DFE61B116B9C001E25EC /* frienderLogo.png */; };
 		D2D7DFEA1B116C88001E25EC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D7DFE81B116C88001E25EC /* FBSDKCoreKit.framework */; };
 		D2D7DFEB1B116C88001E25EC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D7DFE91B116C88001E25EC /* FBSDKLoginKit.framework */; };
+		D2E11C6A1B1186C9008E1CEC /* CreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E11C691B1186C9008E1CEC /* CreateEventViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,8 @@
 		D2D7DFE61B116B9C001E25EC /* frienderLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = frienderLogo.png; path = Friender.xcodeproj/frienderLogo.png; sourceTree = SOURCE_ROOT; };
 		D2D7DFE81B116C88001E25EC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		D2D7DFE91B116C88001E25EC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		D2E11C681B1186C9008E1CEC /* CreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEventViewController.h; sourceTree = "<group>"; };
+		D2E11C691B1186C9008E1CEC /* CreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateEventViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BF5C541B1108BC006454CD /* QuartzCore.framework in Frameworks */,
 				49BF5C811B11553F006454CD /* libstdc++.6.dylib in Frameworks */,
 				49BF5C7F1B1154FA006454CD /* Social.framework in Frameworks */,
 				D2D7DFEB1B116C88001E25EC /* FBSDKLoginKit.framework in Frameworks */,
@@ -152,7 +156,6 @@
 				D2D7DFEA1B116C88001E25EC /* FBSDKCoreKit.framework in Frameworks */,
 				49BF5C561B1108C1006454CD /* Security.framework in Frameworks */,
 				49BF5C681B110B9A006454CD /* Parse.framework in Frameworks */,
-				49BF5C541B1108BC006454CD /* QuartzCore.framework in Frameworks */,
 				49BF5C521B1108B8006454CD /* MobileCoreServices.framework in Frameworks */,
 				49BF5C501B1108B4006454CD /* CoreLocation.framework in Frameworks */,
 				49BF5C741B114053006454CD /* ParseFacebookUtilsV4.framework in Frameworks */,
@@ -391,6 +394,7 @@
 				49BF5C981B119DBA006454CD /* dogecoin.png in Resources */,
 				7EC3B9B41B11944200052147 /* mainPic.jpg in Resources */,
 				49BF5C2A1B10FFE9006454CD /* Main.storyboard in Resources */,
+				49D97BFA1B11CBD0004FE1F6 /* reload_icon@2x.png in Resources */,
 				49BF5C2F1B10FFE9006454CD /* LaunchScreen.xib in Resources */,
 				49BF5C8D1B118668006454CD /* exit_icon@2x.png in Resources */,
 				49BF5C9B1B119E09006454CD /* car.jpg in Resources */,
@@ -575,6 +579,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -598,6 +603,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
