@@ -9,3 +9,8 @@ MULTI PAge Profile
  flipboard type scrolling
 
 flip through top and bottom
+
+Modular Profile:
+Must have a few things: Bio, Interests, Events
+
+Check if attended events by turning on location while they are there-score based on events?

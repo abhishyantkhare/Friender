@@ -2,10 +2,12 @@
 <!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg3336" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:docname="wireframe_mockupsvg.svg" inkscape:version="0.91 r13725"
+	 id="svg3336" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" inkscape:version="0.91 r13725" sodipodi:docname="wireframe_mockupsvg.svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.275px"
 	 height="841.89px" viewBox="0 0 595.275 841.89" enable-background="new 0 0 595.275 841.89" xml:space="preserve">
-<sodipodi:namedview  borderopacity="1.0" inkscape:zoom="0.64" pagecolor="#ffffff" id="base" bordercolor="#666666" showgrid="false" inkscape:cy="2053.0122" inkscape:cx="832.15268" inkscape:pageshadow="2" inkscape:current-layer="layer1" inkscape:snap-object-midpoints="true" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:pageopacity="0.0" inkscape:window-height="1048" inkscape:snap-center="false" inkscape:window-x="0" inkscape:document-units="px">
+<rect x="1412.138" y="1426.046" fill="#FFFFFF" width="777" height="328.354"/>
+<rect x="-124.757" y="1437.546" fill="#FFFFFF" width="777" height="328.354"/>
+<sodipodi:namedview  inkscape:cx="832.15268" inkscape:cy="2053.0122" showgrid="false" bordercolor="#666666" id="base" pagecolor="#ffffff" inkscape:zoom="0.64" borderopacity="1.0" inkscape:document-units="px" inkscape:window-x="0" inkscape:snap-center="false" inkscape:window-y="0" inkscape:snap-object-midpoints="true" inkscape:pageopacity="0.0" inkscape:current-layer="layer1" inkscape:window-width="1920" inkscape:pageshadow="2" inkscape:window-maximized="1" inkscape:window-height="1048">
 	</sodipodi:namedview>
 <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
 	
@@ -14,7 +16,7 @@
 		<rect id="rect3546" x="1468.104" y="-10.441" fill="#FFFFFF" stroke="#000000" stroke-width="1.5495" width="639.938" height="851.46"/>
 	<text transform="matrix(0.6229 0 0 1 118.9199 236.2534)" font-family="'ArialMT'" font-size="130.5237">Friender</text>
 	
-		<linearGradient id="rect3565_1_" gradientUnits="userSpaceOnUse" x1="634.2178" y1="717.1626" x2="915.9504" y2="753.6221" gradientTransform="matrix(0.8 0 0 -0.8 -47.0061 1012.0711)">
+		<linearGradient id="rect3565_1_" gradientUnits="userSpaceOnUse" x1="658.6846" y1="-134.0249" x2="940.4178" y2="-170.4845" gradientTransform="matrix(0.8 0 0 0.8 -66.5783 545.5602)">
 		<stop  offset="0" style="stop-color:#F9F9F9"/>
 		<stop  offset="1" style="stop-color:#F9F9F9;stop-opacity:0"/>
 	</linearGradient>
@@ -22,7 +24,7 @@
 		<rect id="rect3565" x="123.5" y="413.222" fill="url(#rect3565_1_)" stroke="#000000" stroke-width="1.5" width="337.495" height="93.752"/>
 	<text transform="matrix(1 0 0 1 125.8359 468.9224)" font-family="'ArialMT'" font-size="32">Login With Facebook</text>
 	<path d="M1-9.917"/>
-	<path id="path4398" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="M732.479,440.228l-3.567,3.518l12.426-3.457
+	<path id="path4398" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="M732.479,440.228l-3.566,3.518l12.426-3.457
 		l-12.377-3.629L732.479,440.228z"/>
 	<path id="path3581" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
 		M741.337,440.289"/>
@@ -31,11 +33,11 @@
 		<rect id="rect4170" x="680.296" y="-15.292" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.842" height="77.027"/>
 	<text transform="matrix(0.9029 0 0 1 783.2148 45.9663)" font-family="'ArialMT'" font-size="66.8739">People</text>
 	
-		<rect id="rect4235" x="715.185" y="112.798" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="546.306" height="679.598"/>
+		<rect id="rect4235" x="715.185" y="112.798" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="546.307" height="679.598"/>
 	<text transform="matrix(1 0 0 1 834.75 888.9702)" font-family="'ArialMT'" font-size="32">Main Page(People Page)</text>
 	
-		<rect id="rect4255" x="994.146" y="-15.375" fill="#FFFFFF" stroke="#000000" stroke-width="0.8005" width="307.989" height="77.194"/>
-	<text transform="matrix(0.9556 0 0 1 1016.3779 50.189)" fill="#B3B3B3" font-family="'ArialMT'" font-size="69.4825">Events</text>
+		<rect id="rect4255" x="994.146" y="-15.375" fill="#FFFFFF" stroke="#000000" stroke-width="0.8005" width="307.988" height="77.194"/>
+	<text transform="matrix(0.9556 0 0 1 1016.3789 50.189)" fill="#B3B3B3" font-family="'ArialMT'" font-size="69.4825">Events</text>
 	<path id="path4263" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M687.245,4.473l55-1.25"/>
 	<path id="path4265" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M692.245,23.223h43.75"/>
 	<path id="path4267" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M689.745,49.473h56.25"/>
@@ -53,7 +55,7 @@
 		h57.176"/>
 	<path fill="none" stroke="#000000" stroke-width="1.0143" d="M1-9.917"/>
 	<path id="path4398-0" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
-		M1536.036,41.815l-3.566,3.519l12.431-3.458l-12.377-3.628L1536.036,41.815z"/>
+		M1536.036,41.815l-3.566,3.519l12.432-3.458l-12.377-3.628L1536.036,41.815z"/>
 	<path id="path3581-6" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
 		M1544.895,41.876"/>
 	
@@ -63,22 +65,22 @@
 	
 		<rect id="rect4370-4" x="1468.104" y="340.267" fill="#FFFFFF" stroke="#000000" stroke-width="0.6505" width="639.938" height="150.043"/>
 	<text transform="matrix(0.5701 0 0 1 1572.0518 167.9937)" font-family="'ArialMT'" font-size="94.1055">Event 1</text>
-	<text transform="matrix(0.5701 0 0 1 1753.9844 167.9937)" font-family="'ArialMT'" font-size="94.1055" letter-spacing="-17.541"> </text>
-	<text transform="matrix(0.5701 0 0 1 1756.7637 167.9937)" font-family="'ArialMT'" font-size="94.1055" letter-spacing="5.262"> </text>
-	<text transform="matrix(0.4853 0 0 1 1570.5703 319.8257)" font-family="'ArialMT'" font-size="121.0821">Event 2</text>
+	<text transform="matrix(0.5701 0 0 1 1753.9844 167.9937)" font-family="'ArialMT'" font-size="94.1055" letter-spacing="-15.787"> </text>
+	<text transform="matrix(0.5701 0 0 1 1756.7637 167.9937)" font-family="'ArialMT'" font-size="94.1055" letter-spacing="3.508"> </text>
+	<text transform="matrix(0.4853 0 0 1 1570.5713 319.8257)" font-family="'ArialMT'" font-size="121.0821">Event 2</text>
 	<text transform="matrix(0.3792 0 0 1 1514.2549 452.5972)" font-family="'ArialMT'" font-size="130.6382">Event 3</text>
 	<text transform="matrix(1 0 0 1 1724.5723 876.1655)" font-family="'ArialMT'" font-size="32">Events Page</text>
 	
 		<rect id="rect4205" x="695.095" y="-1057.67" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.843" height="848.417"/>
 	
-		<rect id="rect4207" x="695.979" y="-1058.555" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.841" height="77.028"/>
+		<rect id="rect4207" x="695.979" y="-1058.555" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.842" height="77.028"/>
 	<text transform="matrix(0.9029 0 0 1 800.8926 -1000.5513)" font-family="'ArialMT'" font-size="66.8739">People</text>
 	<rect id="rect4213" x="819.14" y="-875.962" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="373.75" height="485"/>
 	<text transform="matrix(1 0 0 1 883.6777 -674.5474)" font-family="'ArialMT'" font-size="32">Widget for </text>
 	<text transform="matrix(1 0 0 1 883.6777 -634.5474)" font-family="'ArialMT'" font-size="32">Meeting People</text>
 	
 		<rect id="rect4221" x="1008.894" y="-1057.885" fill="#FFFFFF" stroke="#000000" stroke-width="0.8005" width="307.988" height="77.194"/>
-	<text transform="matrix(0.9556 0 0 1 1034.0518 -996.3286)" fill="#B3B3B3" font-family="'ArialMT'" font-size="69.4825">Events</text>
+	<text transform="matrix(0.9556 0 0 1 1034.0527 -996.3286)" fill="#B3B3B3" font-family="'ArialMT'" font-size="69.4825">Events</text>
 	<path fill="#B3B3B3" d="M1-9.917"/>
 	<path id="path4398-6" inkscape:connector-curvature="0" fill="#0000FF" stroke="#002AF2" stroke-opacity="0.7843" d="
 		M734.075-244.146l4.604,4.652l-4.541-16.221l-4.715,16.171L734.075-244.146z"/>
@@ -103,14 +105,14 @@
 </g>
 <text transform="matrix(0.7833 0 0 1 784.7939 -848.2036)" font-family="'MyriadPro-Regular'" font-size="52.3894">Friends</text>
 <rect id="rect5699-1_1_" x="696.5" y="-830.462" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="375.65" height="75.13"/>
-<text transform="matrix(0.5428 -0.0011 0.002 1 814.9404 -765.249)" font-family="'MyriadPro-Regular'" font-size="58.2785">Your Events</text>
+<text transform="matrix(0.5428 -0.0011 0.002 1 814.958 -765.25)" font-family="'MyriadPro-Regular'" font-size="58.2785">Your Events</text>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="464.603" y1="492.279" x2="736.085" y2="472.41"/>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="745" y1="323.445" x2="745" y2="324.445"/>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="718.479" y1="7.445" x2="718.479" y2="8.445"/>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="718.479" y1="7.445" x2="737.683" y2="-262.555"/>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="1237.138" y1="33.14" x2="1535.041" y2="51.733"/>
 <rect id="rect5699-1_2_" x="697.501" y="-755.332" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="375.647" height="75.13"/>
-<text transform="matrix(0.5428 -0.0011 0.002 1 818.251 -694.9165)" font-family="'MyriadPro-Regular'" font-size="58.2785">Settings</text>
+<text transform="matrix(0.5428 -0.0011 0.002 1 818.2686 -694.918)" font-family="'MyriadPro-Regular'" font-size="58.2785">Settings</text>
 <rect id="rect4205_1_" x="-245.9" y="-2054.798" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.84" height="947.5"/>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="713.125" y1="-933.506" x2="310.138" y2="-1343.555"/>
 <rect id="rect4170_1_" x="-246.073" y="-2054.798" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.842" height="77.027"/>
@@ -125,13 +127,13 @@
 <line fill="none" stroke="#000000" stroke-width="0.671" x1="368.138" y1="-1823.555" x2="350.138" y2="-1803.555"/>
 <line fill="none" stroke="#000000" stroke-width="0.671" x1="-215.862" y1="-1846.555" x2="-238.862" y2="-1823.555"/>
 <line fill="none" stroke="#000000" stroke-width="0.671" x1="-238.862" y1="-1823.555" x2="-215.862" y2="-1803.555"/>
-<text transform="matrix(0.4811 0 0 1 -63.8618 -1815.5552)" font-family="'MyriadPro-Regular'" font-size="96">Your Pictures</text>
+<text transform="matrix(0.4811 0 0 1 -63.8613 -1815.5552)" font-family="'MyriadPro-Regular'" font-size="96">Your Pictures</text>
 <g>
 	<title></title>
 	<g id="miu">
 		<path id="editor_pencil_pen_edit_write_glyph" d="M313.841-1637.135l10.563,11.498l24.146-26.282l-10.563-11.497L313.841-1637.135
 			z M344.065-1670.036l-4.455,4.85l10.562,11.497l4.456-4.853c1.514-1.645,0-3.292,0-3.292l-7.536-8.203
-			C347.092-1670.036,345.579-1671.683,344.065-1670.036z M312.356-1635.574l-2.224,13.97l12.81-2.445L312.356-1635.574z"/>
+			C347.092-1670.036,345.579-1671.683,344.065-1670.036z M312.356-1635.574l-2.225,13.97l12.811-2.445L312.356-1635.574z"/>
 	</g>
 </g>
 <path fill="#B5B5B5" stroke="#000000" stroke-width="2.227" d="M368.138-1911.974c0,3.545-2.873,6.419-6.419,6.419l0,0
@@ -165,7 +167,7 @@
 <g>
 	<circle fill="#FFFFFF" cx="-161.362" cy="-1242.884" r="54.5"/>
 	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-216.8618" y1="2372.7261" x2="-105.8618" y2="2372.7261" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-216.8618" y1="-1760.7261" x2="-105.8618" y2="-1760.7261" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
@@ -181,7 +183,7 @@
 <g>
 	<circle fill="#FFFFFF" cx="-29.364" cy="-1242.627" r="54.5"/>
 	
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-84.8638" y1="2372.7261" x2="26.1362" y2="2372.7261" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-84.8638" y1="-1760.7261" x2="26.1362" y2="-1760.7261" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
@@ -192,7 +194,7 @@
 <g>
 	<circle fill="#FFFFFF" cx="108.639" cy="-1246.555" r="54.5"/>
 	
-		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="53.1392" y1="2366.0542" x2="164.1392" y2="2366.0542" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="53.1392" y1="-1754.0547" x2="164.1392" y2="-1754.0547" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
@@ -203,7 +205,7 @@
 <g>
 	<circle fill="#FFFFFF" cx="246.057" cy="-1246.298" r="54.5"/>
 	
-		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="190.5571" y1="2371.2261" x2="301.5557" y2="2371.2261" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="190.5571" y1="-1759.2261" x2="301.5557" y2="-1759.2261" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
@@ -271,97 +273,99 @@
 		964.009,839.957 965.388,841.373 985.787,820.431 1006.113,841.373 1007.565,839.957 987.166,819.015 1007.565,798.078 	"/>
 </g>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="1249.076" y1="511.763" x2="1169.688" y2="990.236"/>
-<rect id="rect4205_2_" x="729.956" y="938.509" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.841" height="947.5"/>
+<g>
+	
+		<rect id="rect4205_2_" x="729.782" y="938.509" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.841" height="819.918"/>
+</g>
 <rect id="rect4170_2_" x="729.782" y="938.509" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.841" height="77.025"/>
 <path id="path5634_6_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M816.98,946.751H746.27"/>
 <path id="path5634_5_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M816.667,965.751h-70.711"/>
 <path id="path5634_4_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M816.98,989.751H746.27"/>
 <text transform="matrix(0.5853 0 0 1 957.9961 989.7515)" font-family="'MyriadPro-Regular'" font-size="62.6244">Their Profile</text>
-<rect x="729.956" y="1065.279" fill="#FFFFFF" stroke="#000000" stroke-width="0.671" width="621.841" height="393.473"/>
 <line fill="none" stroke="#000000" stroke-width="0.671" x1="1325.993" y1="1146.751" x2="1343.993" y2="1169.751"/>
 <line fill="none" stroke="#000000" stroke-width="0.671" x1="1343.993" y1="1169.751" x2="1325.993" y2="1189.751"/>
 <line fill="none" stroke="#000000" stroke-width="0.671" x1="759.993" y1="1146.751" x2="736.993" y2="1169.751"/>
 <line fill="none" stroke="#000000" stroke-width="0.671" x1="736.993" y1="1169.751" x2="759.993" y2="1189.751"/>
-<text transform="matrix(0.4811 0 0 1 911.9951 1177.7515)" font-family="'MyriadPro-Regular'" font-size="96">Their Pictures</text>
+<text transform="matrix(0.4811 0 0 1 911.9961 1177.7515)" font-family="'MyriadPro-Regular'" font-size="96">Their Pictures</text>
 <text transform="matrix(1 0 0 1 1267.9932 1202.7515)" font-family="'MyriadPro-Regular'" font-size="12">View Right</text>
 <text transform="matrix(1 0 0 1 1267.9932 1217.1499)" font-family="'MyriadPro-Regular'" font-size="12">Photo (can</text>
 <text transform="matrix(1 0 0 1 1267.9932 1231.5503)" font-family="'MyriadPro-Regular'" font-size="12">also swipe)</text>
 <text transform="matrix(1 0 0 1 759.9932 1202.7515)" font-family="'MyriadPro-Regular'" font-size="12">View Left</text>
 <text transform="matrix(1 0 0 1 759.9932 1217.1499)" font-family="'MyriadPro-Regular'" font-size="12">Photo (can</text>
 <text transform="matrix(1 0 0 1 759.9932 1231.5503)" font-family="'MyriadPro-Regular'" font-size="12">also swipe)</text>
-<text transform="matrix(0.412 0 0 1 752.9541 1054.7515)" font-family="'MyriadPro-Regular'" font-size="53.1393">FirstName LastName</text>
-<text transform="matrix(0.412 0 0 1 1254.9893 1054.7515)" font-family="'MyriadPro-Regular'" font-size="53.1393">Age</text>
-<text transform="matrix(0.7082 0 0 1 754.293 1678.4429)" font-family="'MyriadPro-Regular'" font-size="33.7796">Interests:</text>
-<text transform="matrix(0.9403 0 0 1 747.2432 1491.7905)" font-family="'MyriadPro-Regular'" font-size="24">Bio:</text>
-<text transform="matrix(0.9403 0 0 1 747.2432 1520.5894)" font-family="'MyriadPro-Regular'" font-size="24">Lorem Ipsum is simply dummy text of the printing and </text>
-<text transform="matrix(0.9403 0 0 1 747.2432 1549.3901)" font-family="'MyriadPro-Regular'" font-size="24">typesetting industry. Lorem Ipsum has been the industry&apos;s </text>
-<text transform="matrix(0.9403 0 0 1 747.2432 1578.189)" font-family="'MyriadPro-Regular'" font-size="24">standard dummy text ever since the 1500s, when an un</text>
+<text transform="matrix(0.412 0 0 1 752.9531 1054.7515)" font-family="'MyriadPro-Regular'" font-size="53.1393">FirstName LastName</text>
+<text transform="matrix(0.412 0 0 1 1254.9883 1054.7515)" font-family="'MyriadPro-Regular'" font-size="53.1393">Age</text>
+<text transform="matrix(0.7082 0 0 1 -73.1025 1488.4341)" font-family="'MyriadPro-Regular'" font-size="33.7796">Interests:</text>
+<text transform="matrix(0.9403 0 0 1 773.2432 1469.9136)" font-family="'MyriadPro-Regular'" font-size="24">Bio:</text>
+<text transform="matrix(0.9403 0 0 1 773.2432 1498.7124)" font-family="'MyriadPro-Regular'" font-size="24">Lorem Ipsum is simply dummy text of the printing and </text>
+<text transform="matrix(0.9403 0 0 1 773.2432 1527.5132)" font-family="'MyriadPro-Regular'" font-size="24">typesetting industry. Lorem Ipsum has been the industry&apos;s </text>
+<text transform="matrix(0.9403 0 0 1 773.2432 1556.312)" font-family="'MyriadPro-Regular'" font-size="24">standard dummy text ever since the 1500s, when an un</text>
 <text transform="matrix(0.9403 0 0 1 1265.4932 1578.189)" font-family="'MyriadPro-Regular'" font-size="24">-</text>
-<text transform="matrix(0.9403 0 0 1 747.2432 1606.9897)" font-family="'MyriadPro-Regular'" font-size="24">known printer took a galley of type and scrambled it to </text>
-<text transform="matrix(0.9403 0 0 1 747.2432 1635.7905)" font-family="'MyriadPro-Regular'" font-size="24">make a type specimen book. </text>
+<text transform="matrix(0.9403 0 0 1 773.2432 1585.1128)" font-family="'MyriadPro-Regular'" font-size="24">known printer took a galley of type and scrambled it to </text>
+<text transform="matrix(0.9403 0 0 1 773.2432 1613.9136)" enable-background="new    "><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="24">make a type specimen book. make a type specimen book. </tspan><tspan x="0" y="28.8" font-family="'MyriadPro-Regular'" font-size="24">make a type specimen book. make a type specimen book. </tspan><tspan x="0" y="57.6" font-family="'MyriadPro-Regular'" font-size="24">make a type specimen book. make a type specimen book. </tspan><tspan x="0" y="86.4" font-family="'MyriadPro-Regular'" font-size="24">make a type specimen book. make a type specimen book. </tspan></text>
 <g>
-	<circle fill="#FFFFFF" cx="820.292" cy="1756.222" r="54.5"/>
+	<circle fill="#FFFFFF" cx="-25.144" cy="1574.31" r="54.5"/>
 	
-		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="764.792" y1="-626.3794" x2="875.792" y2="-626.3794" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-80.6436" y1="1056.4673" x2="30.3564" y2="1056.4673" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
-	<path fill="url(#SVGID_5_)" d="M820.292,1806.55c-30.604,0-55.5-24.896-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
-		c30.604,0,55.5,24.895,55.5,55.5C875.792,1781.654,850.896,1806.55,820.292,1806.55z M820.292,1697.55c-29.5,0-53.5,24-53.5,53.5
-		s24,53.5,53.5,53.5s53.5-23.314,53.5-53.5C873.792,1721.55,849.792,1697.55,820.292,1697.55z"/>
+	<path fill="url(#SVGID_5_)" d="M-25.144,1624.638c-30.604,0-55.5-24.896-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
+		s55.5,24.895,55.5,55.5C30.356,1599.742,5.461,1624.638-25.144,1624.638z M-25.144,1515.638c-29.5,0-53.5,24-53.5,53.5
+		s24,53.5,53.5,53.5s53.5-23.314,53.5-53.5C28.356,1539.638,4.356,1515.638-25.144,1515.638z"/>
 </g>
-<text transform="matrix(1 0 0 1 782.792 1742.5503)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
-<text transform="matrix(1 0 0 1 782.792 1771.3491)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<line fill="none" stroke="#C7C8CA" stroke-width="2.227" x1="729.956" y1="1458.751" x2="1351.797" y2="1458.751"/>
+<text transform="matrix(1 0 0 1 -63.6436 1557.2964)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 -63.6436 1586.0952)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<line fill="none" stroke="#C7C8CA" stroke-width="2.227" x1="729.956" y1="1426.046" x2="1351.797" y2="1426.046"/>
 <g>
-	<circle fill="#FFFFFF" cx="952.29" cy="1756.478" r="54.5"/>
+	<circle fill="#FFFFFF" cx="105.854" cy="1561.64" r="54.5"/>
 	
-		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="896.79" y1="-626.3794" x2="1007.79" y2="-626.3794" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="50.3545" y1="1043.5415" x2="161.3545" y2="1043.5415" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
-	<path fill="url(#SVGID_6_)" d="M952.29,1806.55c-30.604,0-55.5-24.896-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
-		c30.604,0,55.5,24.895,55.5,55.5C1007.79,1781.654,982.894,1806.55,952.29,1806.55z M952.29,1697.55c-29.5,0-53.5,24-53.5,53.5
-		s24,53.5,53.5,53.5s53.5-24,53.5-53.5S981.79,1697.55,952.29,1697.55z"/>
+	<path fill="url(#SVGID_6_)" d="M105.854,1611.712c-30.604,0-55.5-24.896-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
+		c30.604,0,55.5,24.895,55.5,55.5C161.354,1586.816,136.458,1611.712,105.854,1611.712z M105.854,1502.712
+		c-29.5,0-53.5,24-53.5,53.5s24,53.5,53.5,53.5s53.5-24,53.5-53.5S135.354,1502.712,105.854,1502.712z"/>
 </g>
 <g>
-	<circle fill="#FFFFFF" cx="1088.589" cy="1750.845" r="54.5"/>
+	<circle fill="#FFFFFF" cx="242.153" cy="1556.007" r="54.5"/>
 	
-		<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="1033.0889" y1="-631.3462" x2="1144.0889" y2="-631.3462" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="186.6533" y1="1048.5083" x2="297.6533" y2="1048.5083" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
-	<path fill="url(#SVGID_7_)" d="M1088.589,1811.517c-30.604,0-55.5-24.898-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
-		c30.603,0,55.5,24.895,55.5,55.5C1144.089,1786.619,1119.191,1811.517,1088.589,1811.517z M1088.589,1702.517
-		c-29.5,0-53.5,24-53.5,53.5s24,53.5,53.5,53.5s53.5-23.316,53.5-53.5C1142.087,1726.517,1118.087,1702.517,1088.589,1702.517z"/>
+	<path fill="url(#SVGID_7_)" d="M242.153,1616.679c-30.604,0-55.5-24.898-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
+		s55.5,24.895,55.5,55.5C297.653,1591.781,272.756,1616.679,242.153,1616.679z M242.153,1507.679c-29.5,0-53.5,24-53.5,53.5
+		s24,53.5,53.5,53.5s53.5-23.316,53.5-53.5C295.651,1531.679,271.651,1507.679,242.153,1507.679z"/>
 </g>
 <g>
-	<circle fill="#FFFFFF" cx="1226.007" cy="1751.103" r="54.5"/>
+	<circle fill="#FFFFFF" cx="379.571" cy="1556.265" r="54.5"/>
 	
-		<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="1170.5068" y1="-626.1743" x2="1281.5049" y2="-626.1743" gradientTransform="matrix(1 0 0 -1 0 1124.6709)">
+		<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="324.0713" y1="1043.3364" x2="435.0693" y2="1043.3364" gradientTransform="matrix(1 0 0 1 0 512.6709)">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="0" style="stop-color:#000000"/>
 	</linearGradient>
-	<path fill="url(#SVGID_8_)" d="M1226.007,1806.345c-30.604,0-55.5-24.896-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
-		c30.603,0,55.498,24.895,55.498,55.5C1281.505,1781.449,1256.609,1806.345,1226.007,1806.345z M1226.007,1697.345
-		c-29.5,0-53.5,24-53.5,53.5c0,43.291,24,53.5,53.5,53.5s53.498-24,53.498-53.5S1255.505,1697.345,1226.007,1697.345z"/>
+	<path fill="url(#SVGID_8_)" d="M379.571,1611.507c-30.604,0-55.5-24.896-55.5-55.5c0-30.605,24.896-55.5,55.5-55.5
+		s55.498,24.895,55.498,55.5C435.069,1586.611,410.174,1611.507,379.571,1611.507z M379.571,1502.507c-29.5,0-53.5,24-53.5,53.5
+		c0,43.291,24,53.5,53.5,53.5s53.498-24,53.498-53.5S409.069,1502.507,379.571,1502.507z"/>
 </g>
-<text transform="matrix(1 0 0 1 911.9912 1736.7515)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
-<text transform="matrix(1 0 0 1 917.79 1776.521)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<text transform="matrix(1 0 0 1 1049.0869 1746.0151)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
-<text transform="matrix(1 0 0 1 1049.0869 1774.8159)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<text transform="matrix(1 0 0 1 1197.8818 1743.8101)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
-<text transform="matrix(1 0 0 1 1197.8818 1772.6108)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<text transform="matrix(1 0 0 1 782.1211 1840.978)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<text transform="matrix(1 0 0 1 790.5928 1869.7769)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
-<text transform="matrix(1 0 0 1 914.1191 1840.7202)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<text transform="matrix(1 0 0 1 920.8857 1867.8159)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
-<text transform="matrix(1 0 0 1 1044.416 1839.2729)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<text transform="matrix(1 0 0 1 1052.8877 1868.0718)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
-<text transform="matrix(1 0 0 1 1183.7412 1835.1792)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
-<text transform="matrix(1 0 0 1 1192.2129 1863.978)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
-<line fill="none" stroke="#000000" stroke-width="0.671" x1="1316.993" y1="1723.751" x2="1334.993" y2="1746.751"/>
-<line fill="none" stroke="#000000" stroke-width="0.671" x1="1334.993" y1="1746.751" x2="1316.993" y2="1766.751"/>
+<text transform="matrix(1 0 0 1 65.5557 1541.9136)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 71.3545 1581.6831)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 202.6514 1551.1772)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 202.6514 1579.978)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 351.4463 1548.9722)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 351.2725 1577.7729)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 -64.3145 1646.1401)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 -55.8428 1674.939)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<text transform="matrix(1 0 0 1 67.6836 1645.8823)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 74.4502 1672.978)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<text transform="matrix(1 0 0 1 197.9805 1644.4351)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 206.4521 1673.2339)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<text transform="matrix(1 0 0 1 337.3057 1640.3413)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 345.7773 1669.1401)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="1316.993" y1="1580.223" x2="1334.993" y2="1603.223"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="1334.993" y1="1603.223" x2="1316.993" y2="1623.223"/>
 <text transform="matrix(1 0 0 1 92.1377 320.1245)" font-family="'MyriadPro-Regular'" font-size="24.1665">Background Image of People Having Fun</text>
 <rect id="rect4205_3_" x="-340.284" y="-1030.872" fill="#FFFFFF" stroke="#000000" stroke-width="2.227" width="621.84" height="947.5"/>
 <line fill="none" stroke="#000000" stroke-width="2.227" x1="768.204" y1="-860.402" x2="246.058" y2="-822.904"/>
@@ -369,5 +373,16 @@
 <path id="path5634_8_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M-257.657-998.829h-70.711"/>
 <path id="path5634_7_" inkscape:connector-curvature="0" fill="none" stroke="#000000" d="M-257.344-974.829h-70.711"/>
 <line fill="none" stroke="#000000" x1="-340.284" y1="-962.396" x2="281.557" y2="-962.396"/>
-<text transform="matrix(0.8844 0 0 1 -103.252 -980.6919)" font-family="'MyriadPro-Regular'" font-size="49.4498">Friends</text>
+<text transform="matrix(0.8844 0 0 1 -103.2524 -980.6919)" font-family="'MyriadPro-Regular'" font-size="49.4498">Friends</text>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="759.993" y1="1578.723" x2="736.993" y2="1601.723"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="736.993" y1="1601.723" x2="759.993" y2="1621.723"/>
+<circle fill="#FFFFFF" stroke="#000000" stroke-width="2" cx="526.571" cy="1558.235" r="54.5"/>
+<text transform="matrix(1 0 0 1 498.4463 1550.9409)" font-family="'MyriadPro-Regular'" font-size="24">Pic of</text>
+<text transform="matrix(1 0 0 1 498.2725 1579.7417)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 484.3057 1642.3101)" font-family="'MyriadPro-Regular'" font-size="24">Interest</text>
+<text transform="matrix(1 0 0 1 492.7773 1671.1089)" font-family="'MyriadPro-Regular'" font-size="24">Name</text>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="263.654" y1="1704.096" x2="240.654" y2="1722.096"/>
+<line fill="none" stroke="#000000" stroke-width="0.671" x1="240.654" y1="1722.096" x2="220.654" y2="1704.096"/>
+<line fill="none" stroke="#000000" stroke-width="2" x1="1325.993" y1="1591.723" x2="1452.138" y2="1591.723"/>
+<line fill="none" stroke="#000000" stroke-width="2" x1="622.138" y1="1623.223" x2="742.138" y2="1621.723"/>
 </svg>
